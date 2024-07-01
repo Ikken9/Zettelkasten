@@ -1,0 +1,175 @@
+{
+  "main": {
+    "id": "55f32ffd46f6085b",
+    "type": "split",
+    "children": [
+      {
+        "id": "f81c6bb9f40b5392",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f79fc184f46eb535",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computing/Software Engineering/Anti-Patterns.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "919c96f25a185ea7",
+    "type": "split",
+    "children": [
+      {
+        "id": "679255cf54787a5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac6fc4b650ca10ec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "23e38a3fabfd31c4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f41b7db076ec8c89",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "92f01648e054e397",
+    "type": "split",
+    "children": [
+      {
+        "id": "d6fdcda240871989",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "456c6e1490cd8825",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Computing/Software Engineering/Anti-Patterns.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ec823be8f6c41330",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Computing/Software Engineering/Anti-Patterns.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e4a2576c4e8de2cf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b3982db118d23dc7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Computing/Software Engineering/Anti-Patterns.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f79fc184f46eb535",
+  "lastOpenFiles": [
+    "Computing/Software Engineering/Design Patterns.md",
+    "Computing/Software Engineering/Programming Design Principles.md",
+    "Computing/Software Engineering/Anti-Patterns.md",
+    "Computing/Software Engineering/images/visitor_structure.png",
+    "Computing/Software Engineering/images/visitor_structure.png.crdownload",
+    "Computing/Software Engineering/images/strategy_structure.png",
+    "Computing/Software Engineering/images/strategy_structure.png.crdownload",
+    "Computing/Software Engineering/images/state_example.png",
+    "Computing/Software Engineering/images/state_example.png.crdownload",
+    "Computing/Software Engineering/images/state_solution.png",
+    "Computing/Software Engineering/images/state_solution.png.crdownload",
+    "Computing/Software Engineering/images/state_problem2.png",
+    "Computing/Software Engineering/images/state_problem2.png.crdownload",
+    "Computing/Software Engineering/images/finite_state_machine.png",
+    "Computing/Software Engineering/images/finite_state_machine.png.crdownload",
+    "Computing/Software Engineering/images/observer_example.png",
+    "Computing/Software Engineering/images/observer_example.png.crdownload",
+    "Computing/Software Engineering/images/observer_structure.png",
+    "Computing/Software Engineering/images/observer_structure.png.crdownload",
+    "Computing/Software Engineering/images/observer_solution2.png",
+    "Computing/Software Engineering/images/observer)solution2.png",
+    "Computing/Software Engineering/images/observer)solution2.png.crdownload",
+    "Computing/Software Engineering/images/observer_solution1.png.crdownload"
+  ]
+}

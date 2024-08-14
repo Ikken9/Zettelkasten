@@ -1,0 +1,7 @@
+# dBc
+
+**dBc** (**decibels relative to the [carrier](https://en.wikipedia.org/wiki/Carrier_wave "Carrier wave")**) is the power ratio of a signal to a [carrier](https://en.wikipedia.org/wiki/Carrier_wave "Carrier wave") signal, expressed in [decibels](https://en.wikipedia.org/wiki/Decibels "Decibels"). For example, [phase noise](https://en.wikipedia.org/wiki/Phase_noise "Phase noise") is expressed in dBc/[Hz](https://en.wikipedia.org/wiki/Hertz "Hertz") at a given [frequency](https://en.wikipedia.org/wiki/Frequency "Frequency") offset from the carrier. dBc can also be used as a measurement of Spurious-Free Dynamic Range ([SFDR](https://en.wikipedia.org/wiki/Spurious-Free_Dynamic_Range "Spurious-Free Dynamic Range")) between the desired signal and unwanted spurious outputs resulting from the use of signal converters such as a [digital-to-analog converter](https://en.wikipedia.org/wiki/Digital-to-analog_converter "Digital-to-analog converter") or a [frequency mixer](https://en.wikipedia.org/wiki/Frequency_mixer "Frequency mixer").
+
+If the dBc figure is positive, then the relative signal strength is greater than the carrier signal strength. If the dBc figure is negative, then the relative signal strength is less than carrier signal strength.
+
+Although the [decibel](https://en.wikipedia.org/wiki/Decibel "Decibel") (dB) is permitted for use alongside [SI](https://en.wikipedia.org/wiki/International_System_of_Units "International System of Units") units, the dBc is not.

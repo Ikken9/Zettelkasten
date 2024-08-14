@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f81c6bb9f40b5392",
+        "id": "46575132f111339c",
         "type": "tabs",
         "children": [
           {
-            "id": "f79fc184f46eb535",
+            "id": "d97ec30707ed9ab5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Software Engineering/Anti-Patterns.md",
+                "file": "Computing/Cloud/Cloud Computing.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 324.5
   },
   "right": {
     "id": "92f01648e054e397",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Software Engineering/Anti-Patterns.md",
+                "file": "Computing/Cloud/Cloud Computing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Software Engineering/Anti-Patterns.md",
+                "file": "Computing/Cloud/Cloud Computing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Software Engineering/Anti-Patterns.md"
+                "file": "Computing/Cloud/Cloud Computing.md"
               }
             }
           }
@@ -146,11 +146,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f79fc184f46eb535",
+  "active": "d97ec30707ed9ab5",
   "lastOpenFiles": [
-    "Computing/Software Engineering/Design Patterns.md",
+    "Electronics/Components/Capacitor.md",
+    "Computing/Cloud/Cloud Computing.md",
+    "Computing/Cloud",
+    "Electronics/Concepts/Kirchhoff's circuit laws.md",
+    "Electronics/Concepts/Capacitance.md",
+    "Electronics/Concepts/Resistance.md",
+    "Electronics/Concepts/Coupling.md",
+    "Electronics/Components/Random Access Memory.md",
+    "Electronics/Components/Crystal Oscillator.md",
+    "Electronics/Low-Pass Filter.md",
+    "Electronics/DAC vs Digital Potentiometer.md",
+    "Electronics/Concepts/dBc - Decibels Relative to the Carrier.md",
+    "Electronics/Oscillators.md",
+    "Electronics/Capacitive Voltage Divider.md",
+    "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg",
+    "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg.crdownload",
+    "Electronics/images",
+    "Electronics/Concepts",
+    "Electronics/Components",
     "Computing/Software Engineering/Programming Design Principles.md",
+    "Electronics",
+    "Computing/Software Engineering/Design Patterns.md",
     "Computing/Software Engineering/Anti-Patterns.md",
+    "Computing/Software Engineering/Anti-Patterns 1.md",
+    "Computing/Software Engineering/images/Architectural Patterns.md",
     "Computing/Software Engineering/images/visitor_structure.png",
     "Computing/Software Engineering/images/visitor_structure.png.crdownload",
     "Computing/Software Engineering/images/strategy_structure.png",
@@ -160,16 +182,9 @@
     "Computing/Software Engineering/images/state_solution.png",
     "Computing/Software Engineering/images/state_solution.png.crdownload",
     "Computing/Software Engineering/images/state_problem2.png",
-    "Computing/Software Engineering/images/state_problem2.png.crdownload",
     "Computing/Software Engineering/images/finite_state_machine.png",
-    "Computing/Software Engineering/images/finite_state_machine.png.crdownload",
     "Computing/Software Engineering/images/observer_example.png",
-    "Computing/Software Engineering/images/observer_example.png.crdownload",
     "Computing/Software Engineering/images/observer_structure.png",
-    "Computing/Software Engineering/images/observer_structure.png.crdownload",
-    "Computing/Software Engineering/images/observer_solution2.png",
-    "Computing/Software Engineering/images/observer)solution2.png",
-    "Computing/Software Engineering/images/observer)solution2.png.crdownload",
-    "Computing/Software Engineering/images/observer_solution1.png.crdownload"
+    "Computing/Software Engineering/images/observer_solution2.png"
   ]
 }

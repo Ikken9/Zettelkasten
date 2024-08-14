@@ -1,0 +1,18 @@
+# Coupling
+
+In [electronics](https://en.wikipedia.org/wiki/Electronics "Electronics"), [electric power](https://en.wikipedia.org/wiki/Electric_power "Electric power") and [telecommunication](https://en.wikipedia.org/wiki/Telecommunication "Telecommunication"), **coupling** is the transfer of [electrical energy](https://en.wikipedia.org/wiki/Electrical_energy "Electrical energy") from one [circuit](https://en.wikipedia.org/wiki/Electronic_circuit "Electronic circuit") to another, or between parts of a circuit. Coupling can be deliberate as part of the function of the circuit, or it may be undesirable, for instance due to coupling to [stray fields](https://en.wikipedia.org/wiki/Stray_field "Stray field"). For example, energy is transferred from a [power source](https://en.wikipedia.org/wiki/Power_supply "Power supply") to an [electrical load](https://en.wikipedia.org/wiki/Electrical_load "Electrical load") by means of [conductive coupling](https://en.wikipedia.org/wiki/Conductive_coupling "Conductive coupling"), which may be either [resistive](https://en.wikipedia.org/wiki/Resistor "Resistor") or [direct coupling](https://en.wikipedia.org/wiki/Direct_coupling "Direct coupling"). An [AC](https://en.wikipedia.org/wiki/Alternating_current "Alternating current") potential may be transferred from one circuit segment to another having a [DC](https://en.wikipedia.org/wiki/Direct_current "Direct current") potential by use of a [capacitor](https://en.wikipedia.org/wiki/Capacitor "Capacitor"). Electrical energy may be transferred from one circuit segment to another segment with different [impedance](https://en.wikipedia.org/wiki/Characteristic_impedance "Characteristic impedance") by use of a [transformer](https://en.wikipedia.org/wiki/Transformer "Transformer"); this is known as [impedance matching](https://en.wikipedia.org/wiki/Impedance_matching "Impedance matching"). These are examples of [electrostatic](https://en.wikipedia.org/wiki/Capacitive_coupling "Capacitive coupling") and [electrodynamic](https://en.wikipedia.org/wiki/Electrodynamic_induction "Electrodynamic induction") inductive coupling.
+
+In the context of modular and not, say, [trains](https://www.youtube.com/watch?v=b8HO6hba9ZE), coupling is what happens when you patch two modules together. The electrical signal flows out one module, through the patch cable, and into another module’s input. That signal might be alternating current (AC) or direct current (DC). AC signals will come from things like audio oscillators: oscillators make signals that move up and down, generally pretty fast. DC signals will come from places like sequencers, offset generators, or LFOs: unlike audio oscillators, they’re static and they don’t move (or least not very fast). And if an input is DC coupled, you can put a slow or static signal into it; if an output is DC coupled, it’s good for that sort of signal.
+
+
+#### What is meant by AC vs DC?
+AC and DC are abbreviations for Alternating (Capacitive) Coupling and Direct Coupling. This setting is important as it will affect the frequency content of your data.
+
+Most signals are composed of AC and DC components. The DC component is the 0 Hz component that acts as an offset in the time domain. The AC component consists of all other frequencies.
+
+#### AC Coupling
+Allows only AC signals to pass through a connection. AC coupling removes the DC offset by making use of a DC-blocking capacitor in series with the signal. AC coupling effectively rejects the DC component of the signal normalizing the signal to a mean of zero.
+
+#### DC Coupling
+Allows _both_ AC and DC signals to pass through a connection. The DC component is a 0 Hz signal which acts as an offset about which the AC component of the signal fluctuates.
+

@@ -1,6 +1,4 @@
-$$
 # Capacitance
-$$
 
 In electromagnetism and electronics, the **capacitance** is the capability of a material object to store electric charge. It is measured by the charge in response to a difference in electric potential, expressed as the ratio of those quantities.
 

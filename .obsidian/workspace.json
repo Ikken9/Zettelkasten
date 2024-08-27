@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Cloud/Cloud Computing.md",
+                "file": "Ethics/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Cloud/Cloud Computing.md",
+                "file": "Ethics/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Cloud/Cloud Computing.md",
+                "file": "Ethics/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Cloud/Cloud Computing.md"
+                "file": "Ethics/Untitled.md"
               }
             }
           }
@@ -148,6 +148,21 @@
   },
   "active": "d97ec30707ed9ab5",
   "lastOpenFiles": [
+    "Mathematics/Algebra/Matrices.md",
+    "Ethics/Untitled.md",
+    "Ethics",
+    "Mathematics/Algebra/matrix.py~",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy-2.1.0.dist-info/REQUESTED",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy-2.1.0.dist-info/INSTALLER",
+    "Mathematics/Algebra/venv/bin/numpy-config",
+    "Mathematics/Algebra/venv/bin/f2py",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy/__pycache__/version.cpython-311.pyc",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy/typing/tests/__pycache__/test_typing.cpython-311.pyc",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy/typing/tests/__pycache__/test_runtime.cpython-311.pyc",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy/typing/tests/__pycache__/test_isfile.cpython-311.pyc",
+    "Mathematics/Algebra/venv/lib/python3.11/site-packages/numpy/random/LICENSE.md",
+    "Computing/Cloud/Cloud Computing.md",
+    "Mathematics/Algebra.md",
     "Computing/Software Engineering/Design Patterns.md",
     "Computing/Software Engineering/Anti-Patterns.md",
     "Computing/Software Engineering/Programming Design Principles.md",
@@ -155,8 +170,6 @@
     "Electronics/Components/Capacitor.md",
     "Electronics/Components/Crystal Oscillator.md",
     "Electronics/Concepts/Coupling.md",
-    "Computing/Cloud/Cloud Computing.md",
-    "Computing/Cloud",
     "Electronics/Concepts/Kirchhoff's circuit laws.md",
     "Electronics/Concepts/Resistance.md",
     "Electronics/Components/Random Access Memory.md",
@@ -166,21 +179,12 @@
     "Electronics/Oscillators.md",
     "Electronics/Capacitive Voltage Divider.md",
     "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg",
-    "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg.crdownload",
-    "Electronics/images",
-    "Electronics/Concepts",
-    "Electronics/Components",
-    "Electronics",
     "Computing/Software Engineering/Anti-Patterns 1.md",
     "Computing/Software Engineering/images/Architectural Patterns.md",
     "Computing/Software Engineering/images/visitor_structure.png",
-    "Computing/Software Engineering/images/visitor_structure.png.crdownload",
     "Computing/Software Engineering/images/strategy_structure.png",
-    "Computing/Software Engineering/images/strategy_structure.png.crdownload",
     "Computing/Software Engineering/images/state_example.png",
-    "Computing/Software Engineering/images/state_example.png.crdownload",
     "Computing/Software Engineering/images/state_solution.png",
-    "Computing/Software Engineering/images/state_solution.png.crdownload",
     "Computing/Software Engineering/images/state_problem2.png",
     "Computing/Software Engineering/images/finite_state_machine.png",
     "Computing/Software Engineering/images/observer_example.png",

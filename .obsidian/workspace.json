@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "46575132f111339c",
+        "id": "d93e2359c80cda32",
         "type": "tabs",
         "children": [
           {
-            "id": "d97ec30707ed9ab5",
+            "id": "35739db2caf3c4c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md",
+                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 324.5,
+    "collapsed": true
   },
   "right": {
     "id": "92f01648e054e397",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md",
+                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md",
+                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md"
+                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md"
               }
             }
           }
@@ -146,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d97ec30707ed9ab5",
+  "active": "35739db2caf3c4c0",
   "lastOpenFiles": [
+    "Computing/Algorithms and Data Structures/Dynamic Programming.md",
     "Computing/Algorithms and Data Structures/Optimization.md",
     "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md",
     "Mathematics/Algebra/Matrices.md",

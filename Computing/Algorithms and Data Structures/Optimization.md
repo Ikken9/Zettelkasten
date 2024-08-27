@@ -80,3 +80,4 @@ An optimization problem could have many optimum values $x^*$, so we define:
 
 $argmin = \{x \in X: f(x) = \alpha \}$ and $argmax$ is defined analogously.
 
+

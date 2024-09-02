@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Software Engineering/Artifacts.md",
+                "file": "Computing/Software Engineering/Context Diagrams.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3365767757970f51",
+            "id": "2614155808f6629e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Software Engineering/Architectural Paradigms.md",
+                "file": "Computing/Software Engineering/Exercising.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Software Engineering/Artifacts.md",
+                "file": "Computing/Software Engineering/Exercising.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Software Engineering/Artifacts.md",
+                "file": "Computing/Software Engineering/Exercising.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Software Engineering/Artifacts.md"
+                "file": "Computing/Software Engineering/Exercising.md"
               }
             }
           }
@@ -158,11 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5acc6898b4ce5ada",
+  "active": "2614155808f6629e",
   "lastOpenFiles": [
+    "Computing/Cloud/exercising.md",
+    "Computing/Software Engineering/Context Diagrams.md",
+    "Computing/Software Engineering/images/context_diagram.png",
     "Computing/Software Engineering/Exercising.md",
     "Computing/Software Engineering/Artifacts.md",
+    "Computing/Software Engineering/Deployment Diagram.md",
     "Computing/Software Engineering/Architectural Paradigms.md",
+    "Computing/Software Engineering/images/deploymentdiagram2.png",
+    "Computing/Software Engineering/images/deploymentdiagram2.png.png.crdownload",
+    "Computing/Software Engineering/images/deploymentdiagram1.png",
+    "Computing/Software Engineering/images/deploymentdiagram1.png.crdownload",
     "Computing/Software Engineering/Architectural Patterns.md",
     "Computing/Software Engineering/Component Modeling.md",
     "Computing/Software Engineering/Software Architecture.md",
@@ -170,7 +179,6 @@
     "Computing/Software Engineering/The Operational Aspect of Software Architecture.md",
     "Computing/Software Engineering/Design Patterns.md",
     "Computing/Software Engineering/Anti-Patterns.md",
-    "Computing/Software Engineering/Context Diagrams.md",
     "Computing/Software Engineering/images/componentDiagramUML2.jpg",
     "Computing/Software Engineering/images/componentDiagramUML2.jpg.crdownload",
     "Computing/Software Engineering/Architecture Overview Diagram (AOD).md",
@@ -190,21 +198,13 @@
     "Electronics/Low-Pass Filter.md",
     "Electronics/Components/Battery Charger.md",
     "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md",
-    "Computing/Algorithms and Data Structures/Dynamic Programming.md",
-    "Mathematics/Algebra/Matrices.md",
-    "Electronics/Concepts/dBc - Decibels Relative to the Carrier.md",
     "Computing/Algorithms and Data Structures",
     "Mathematics/Algebra/matrix.py",
     "Mathematics/Algebra",
     "Mathematics",
-    "Ethics",
-    "Computing/Cloud",
     "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg",
     "Computing/Software Engineering/images/visitor_structure.png",
     "Computing/Software Engineering/images/strategy_structure.png",
-    "Computing/Software Engineering/images/state_example.png",
-    "Computing/Software Engineering/images/state_solution.png",
-    "Computing/Software Engineering/images/state_problem2.png",
-    "Computing/Software Engineering/images/finite_state_machine.png"
+    "Computing/Software Engineering/images/state_example.png"
   ]
 }

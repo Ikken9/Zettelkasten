@@ -117,15 +117,53 @@
     **R:** Saga
 
 
-## Deploy Diagrams
+## Deployment Diagrams
 
 46. ¿Qué diagrama UML se utiliza para comprender la arquitectura física de un sistema? Enumere y describa los elementos que utiliza en la notación.
     **R:** Diagrama de Despliegue
-47. Explica la diferencia entre nodos y componentes en un diagrama de despliegue. ¿Cómo se relacionan estos elementos? 
+47. Explica la diferencia entre nodos y componentes en un diagrama de despliegue. ¿Cómo se relacionan estos elementos?
+    **R:** Los nodos de un diagrama de despliegue son unidades que pueden procesar, almacenar o transportar datos. Son items en donde reside el software que se quiere desplegar. Los componentes de un diagrama de despliegue pueden son piezas de software o partes del sistema que pueden ser desplegadas dentro de un nodo.
 48. Explica cómo se indican los artefactos en un diagrama de despliegue y cómo se relacionan con los nodos.
-49. ¿En qué casos sería útil utilizar un diagrama de despliegue en un proyecto de desarrollo de software? ¿Qué información puede proporcionar a los desarrolladores y otros stakeholders? 
+    **R:** Los artefactos se indican mediante un rectángulo con la notación *\<\<artifact\>\>*, estos están contenidos dentro de los nodos.
+49. ¿En qué casos sería útil utilizar un diagrama de despliegue en un proyecto de desarrollo de software? ¿Qué información puede proporcionar a los desarrolladores y otros stakeholders?
+    **R:** Siempre que se quiera realizar un despliegue.
 50. Dibuje un diagrama de despliegue con los elementos necesarios para una aplicación de mensajería instantánea que utiliza una arquitectura three-tier.
 
 
-FALTA HACER ARTICULO DE DEPLOY DIAGRAMS
-FALTA HACER ARTICULO DE ARTEFACTOS
+## ANDISTORE
+
+#### Actores:
+  - Personal,
+  - Usuarios web
+  - Usuarios mobile
+  
+#### Sistemas adyacentes:
+  - Mercado Pago
+  - DAC
+  - Auth0
+  - Pasarela de pagos
+  - Correo
+
+#### Casos de Uso:
+- Usuario se autentica (\*) 
+- Usuario realiza compra (incluyendo el pago) (\*)
+- Usuario visualiza productos
+- Usuario visualiza su historial de compras
+- Personal gestiona productos (\*)
+- Personal gestiona promociones
+- Usuario rastrea pedido en tiempo real (\*)
+- Usuario filtra producto
+- Usuario busca producto
+- Usuario recibe recomendaciones basadas en su historial de compra
+
+#### NFRs
+Seguridad TLS 1.3
+Compatibilidad Android y iOS
+Alto nivel de rendimiento
+Alta escalabilidad
+Alta disponibilidad
+Redundancia de datos
+Balanceo de Carga
+UI/UX
+
+

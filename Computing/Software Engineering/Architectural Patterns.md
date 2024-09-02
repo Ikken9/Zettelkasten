@@ -23,6 +23,11 @@ Using the MVC pattern for websites, requests are routed to a Controller that is 
 ## Saga Architecture Pattern
 The Saga architecture pattern **provides transaction management using a sequence of local transactions.**
 
+##### Context
+A _transaction_ is a single unit of logic or work, sometimes made up of multiple operations. Within a transaction, an _event_ is a state change that occurs to an entity, and a _command_ encapsulates all information needed to perform an action or trigger a later event.
+
+Transactions must be _atomic, consistent, isolated, and durable (ACID)_. Transactions within a single service are **ACID**, but cross-service data consistency requires a cross-service transaction management strategy
+
 A local transaction is the unit of work performed by a Saga participant. Every operation that is part of the Saga can be rolled back by a compensating transaction. Further, the Saga pattern guarantees that either all operations complete successfully or the corresponding compensation transactions are run to undo the work previously completed.
 
 In the Saga pattern, **a compensating transaction must be _idempotent_ and _retryable_.** These two principles ensure that we can manage transactions without any manual intervention.

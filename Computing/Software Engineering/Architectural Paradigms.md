@@ -40,6 +40,21 @@ Suitable for medium to large-sized applications with complex business logic. Ide
 The pipeline architecture is one of the most common architecture styles used in designing software systems. Also known as _pipes and filters_, it consists of a series of discrete steps performed in a predictable sequence. This is different from the model-view-controller pattern in a layered architecture.
 The most common use case for a pipeline architecture is system integration. Any time you need to move data from one application to another, a pipeline is a very suitable style. Because you define the integration solution as a series of discrete steps, it makes for a very modular design. The filters themselves are highly cohesive and loosely coupled, meaning they do one thing only, and a filter has no dependency on other filters.
 
+Decompose a task that performs complex processing into a series of separate elements that can be reused. Doing so can improve performance, scalability, and reusability of initial steps by allowing task elements that perform the processing to be deployed and scaled independently. Pipes and Filters pattern supports a high level of modularity.
+
+It breaks down the processing required for each stream into a set of separate components (or filters), each performing a single task.
+
+##### Considerations
+- **Monolithic nature**. This pattern is usually implemented as a monolithic pipeline, so for any change, the entire filter chain should be tested end to end. Also, fault-tolerance for the whole process needs to be considered; if a filter or pipe fails, the whole pipeline is likely to fail.
+
+- **Complexity**. The increased flexibility that this pattern provides can also introduce complexity, especially if the filters in a pipeline are distributed across different servers.
+
+- **Reliability**. Use an infrastructure that ensures that data flowing between filters in a pipe aren't lost.
+
+- **Idempotency**. If a filter in a pipeline fails after receiving a message and the work is rescheduled to another instance of the filter, part of the work might already be complete. If the work updates some aspect of the global state (like information stored in a database), a single update could be repeated. A similar issue might occur if a filter fails after it posts its results to the next filter, but before it indicates that it completed its work successfully. In these cases, another instance of the filter could repeat this work, causing the same results to be posted twice. This scenario could result in subsequent filters in the pipeline processing the same data twice. Therefore, filters in a pipeline should be designed to be idempotent.
+
+- **Repeated messages**. If a filter in a pipeline fails after it posts a message to the next stage of the pipeline, another instance of the filter might be run, and it would post a copy of the same message to the pipeline. This scenario could cause two instances of the same message to be passed to the next filter. To avoid this problem, the pipeline should detect and eliminate duplicate messages.
+
 
 #### Microkernel architecture
 El estilo arquitectónico de Microkernel o también conocido como arquitectura de *Plug-in*, permite crear aplicaciones extensibles, mediante la cual es posible agregar nueva funcionalidad mediante la adición de pequeños plugins que extienden la funcionalidad inicial del sistema.

@@ -167,3 +167,6 @@ Balanceo de Carga
 UI/UX
 
 
+### AOD
+
+![andistore_aod](andistore_aod.png)

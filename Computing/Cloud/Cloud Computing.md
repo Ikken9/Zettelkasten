@@ -10,25 +10,21 @@ Because cloud computing uses the internet to deliver these services, it doesn’
 The shared responsibility model in cloud computing defines how responsibilities are divided between the cloud provider and the consumer. In a traditional corporate datacenter, the company handles everything, including physical security and maintaining infrastructure. In the cloud, these responsibilities are split: the cloud provider manages physical aspects like security, power, and connectivity, while the consumer is responsible for data, access security, and specific configurations.
 
 Responsibilities vary based on the cloud service type:
-
 - **IaaS (Infrastructure as a Service):** The consumer has more responsibilities, such as maintaining the operating system and applications.
 - **PaaS (Platform as a Service):** Responsibilities are shared more equally between the provider and consumer.
 - **SaaS (Software as a Service):** The provider takes on most responsibilities, leaving the consumer mainly in charge of data and access.
 
 When using a cloud provider, you’ll always be responsible for:
-
 - The information and data stored in the cloud
 - Devices that are allowed to connect to your cloud (cell phones, computers, and so on)
 - The accounts and identities of the people, services, and devices within your organization
 
 The cloud provider is always responsible for:
-
 - The physical datacenter
 - The physical network
 - The physical hosts
 
 Your service model will determine responsibility for things like:
-
 - Operating systems
 - Network controls
 - Applications
@@ -69,7 +65,6 @@ In contrast, OpEx is spending money on services or products over time. Renting a
 Cloud computing falls under OpEx because cloud computing operates on a consumption-based model. With cloud computing, you don’t pay for the physical infrastructure, the electricity, the security, or anything else associated with maintaining a datacenter. Instead, you pay for the IT resources you use. If you don’t use any IT resources this month, you don’t pay for any IT resources.
 
 This consumption-based model has many benefits, including:
-
 - No upfront costs.
 - No need to purchase and manage costly infrastructure that users might not use to its fullest potential.
 - The ability to pay for more resources when they're needed.
@@ -93,6 +88,9 @@ In a cloud-based model, you don’t have to worry about getting the resource nee
 #### Firewalls
 - **Explanation:** Network security devices that monitor and control incoming and outgoing network traffic based on security rules.
 - Common Cloud Providers:** AWS Security Groups, Azure Firewall, Google Cloud Firewall.
+
+#### Web Application Firewall (WAF)
+A WAF or web application firewall helps protect web applications by filtering and monitoring HTTP traffic between a web application and the Internet. It typically protects web applications from attacks such as cross-site forgery, cross-site-scripting (XSS), file inclusion, and SQL injection, among others.
 
 #### Virtual Private Cloud (VPC)
 - Explanation:** Isolated network environments within a cloud provider's infrastructure for hosting resources securely.

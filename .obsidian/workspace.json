@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Software Engineering/Exercising.md",
+                "file": "Computing/Cloud/Cloud Computing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Software Engineering/Exercising.md",
+                "file": "Computing/Software Engineering/Context Diagrams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Software Engineering/Exercising.md",
+                "file": "Computing/Software Engineering/Context Diagrams.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Software Engineering/Exercising.md"
+                "file": "Computing/Software Engineering/Context Diagrams.md"
               }
             }
           }
@@ -159,12 +158,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2614155808f6629e",
+  "active": "5acc6898b4ce5ada",
   "lastOpenFiles": [
-    "Computing/Cloud/exercising.md",
+    "Computing/Cloud/Cloud Computing.md",
     "Computing/Software Engineering/Context Diagrams.md",
-    "Computing/Software Engineering/images/context_diagram.png",
+    "Computing/DevOps/DevOps.md",
     "Computing/Software Engineering/Exercising.md",
+    "Computing/Software Engineering/Architecture Overview Diagram (AOD).md",
+    "Computing/Software Engineering/images/andistore_aod.png",
+    "Computing/Software Engineering/images/andistore_aod.png.crdownload",
+    "Computing/Cloud/exercising.md",
+    "Computing/Software Engineering/images/context_diagram.png",
     "Computing/Software Engineering/Artifacts.md",
     "Computing/Software Engineering/Deployment Diagram.md",
     "Computing/Software Engineering/Architectural Paradigms.md",
@@ -181,10 +185,7 @@
     "Computing/Software Engineering/Anti-Patterns.md",
     "Computing/Software Engineering/images/componentDiagramUML2.jpg",
     "Computing/Software Engineering/images/componentDiagramUML2.jpg.crdownload",
-    "Computing/Software Engineering/Architecture Overview Diagram (AOD).md",
     "Computing/Software Engineering/Architecture Decision Record (ADR).md",
-    "Computing/Cloud/Cloud Computing.md",
-    "Computing/DevOps/DevOps.md",
     "Computing/DevOps",
     "Computing/Software Engineering/images/aod2.png",
     "Computing/Software Engineering/images/aod2.png.crdownload",
@@ -201,10 +202,8 @@
     "Computing/Algorithms and Data Structures",
     "Mathematics/Algebra/matrix.py",
     "Mathematics/Algebra",
-    "Mathematics",
     "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg",
     "Computing/Software Engineering/images/visitor_structure.png",
-    "Computing/Software Engineering/images/strategy_structure.png",
-    "Computing/Software Engineering/images/state_example.png"
+    "Computing/Software Engineering/images/strategy_structure.png"
   ]
 }

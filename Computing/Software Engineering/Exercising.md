@@ -28,8 +28,7 @@
 	   *Restricciones Técnicas*: Estándar de desarrollo en Java, Integración con el core via colas asíncronas.
 	   *Restricciones de Negocio*: Plazo de 8 meses, Presupuesto de USD 4 Millones.
 9. ¿Qué se considera como un requerimiento funcional arquitecturalmente significativo?
-   **R:** Un requerimiento funcional arquitecturalmente significativo es aquel cuyo impacto es determinante en la arquitectura del sistema, es decir, que una parte o total de
-   la arquitectura sea de alguna manera dependiente del mismo.
+   **R:** Un requerimiento funcional arquitecturalmente significativo es aquel cuyo impacto es determinante en la arquitectura del sistema, es decir, que una parte o total de la arquitectura sea de alguna manera dependiente del mismo.
 10. Describa en qué consiste el proceso de construcción de una arquitectura
     **R:** El proceso consiste en varios pasos que deben seguirse si se quiere llegar a una solución óptima (o al menos lo mejor posible), los pasos son los siguientes:
 	1. Obtención de requerimientos
@@ -88,7 +87,7 @@
 29. ¿Qué diagrama UML se utiliza para modelar un diagrama de relación de componentes?
     **R:** Diagrama de Clases.
 30. ¿Qué input se toma para representar un diagrama de interacción de componentes?
-    **R:** El flujo de datos entre componentes producto de su caso de uso.
+    **R:** El flujo de datos entre componentes producto de sus casos de uso.
 31. ¿Cuál es la única relación entre componentes que se representa en un diagrama de relación de componentes?
     **R:** Entre los componentes se establece una relación de uso.
 32. ¿Qué se debe describir para cada componente en un modelo de componentes?

@@ -1,6 +1,6 @@
 # Component Modeling
 
-Component Model is a formal representation of: 
+A **Component Model** is a formal representation of: 
 - The internal Structure of the solution (the relationships between the components that make up the solution), i.e. Static View, and solution Behavior, i.e. Dynamic View. 
 - A next step from the System Context Diagram that aligns with the Black Box engineering principle to the White Box principle, whereby the architects look at “what’s inside the solution” 
 - Provides the necessary input for the operational model to make proper placement decisions about the components various aspects: 
@@ -47,7 +47,7 @@ Examples of components are:
 - Physical: Represents actual concrete software or hardware technology, a product/package used for component implementation. These are decision usually made during the Component Implementation stage.
 
 
-### Identifying components
+### 1. Identifying components
 Component identification is the first step of the component modeling technique and involves the following. Driven by an understanding of the business requirements the Architect will:
 - Partition the system into subsystems and components and assign responsibilities based on an analysis of the requirements. 
 - Use a reference architecture, architectural patterns, and other reusable assets that can be used as a starting point 
@@ -63,14 +63,14 @@ Isolation is a measure of the degree to which product and technology dependencie
 Layering involves separating out components according to their generality.
 
 
-### Specifying Components
+### 2. Specifying Components
 Component specification is the second step of the component modeling technique and involves: 
 - Defining component interfaces by separating out the responsibilities placed on the components.
 - For each interface, specifying the operations and their signatures, that is, parameters passed and return values .
 - For each operation, specifying its contract of behavior or preconditions and postconditions.
 
 
-### Implementing components
+### 3. Implementing components
 Component Implementation is the third step of the component modeling technique and involves:
 - For those components that are to be implemented using commercial-off-the-shelf (COTS) products, map the specified-level components to the appropriate products or packages. 
 - For those components that are to be built, identify the approach to implementation by defining the physical-level components. Use patterns or other assets to help in this definition. 

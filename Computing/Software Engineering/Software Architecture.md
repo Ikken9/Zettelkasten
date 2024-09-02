@@ -32,6 +32,7 @@ These are the key phases in the Software Architecture Process:
 ### 3. **Architectural Documentation**
 - Create diagrams (e.g., flowcharts, class diagrams, sequence diagrams), define component interactions, interfaces, and describe the deployment view. Tools like UML (Unified Modeling Language) are often used.
 - Document the architecture for communication and future reference.
+- Use [[Architecture Decision Record (ADR)]]
 
 ### 4. **Architectural Evaluation**
 - Assess the architecture to ensure it meets the required quality attributes.
@@ -66,7 +67,7 @@ Architectural decisions should be properly documented, preferably using a standa
 
 ## Viability
 
-*"The common causes for troubled projects are known, and almost all are avoidable.*
+*"The common causes for troubled projects are known, and almost all are avoidable."*
 
 A software-oriented **viability assessment** focuses on determining whether a proposed software project or solution is feasible, sustainable, and likely to succeed. The process considers various aspects specific to software development, including technical feasibility, resource requirements, market demand, risks, and alignment with business goals.
 

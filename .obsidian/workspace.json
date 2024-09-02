@@ -13,24 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Software Engineering/Architectural Patterns.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "cf657071f7add7da",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7dda22a41fb8ada3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Computing/Software Engineering/Exercising.md",
                 "mode": "source",
                 "source": false
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Software Engineering/Architectural Patterns.md",
+                "file": "Computing/Software Engineering/Exercising.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Software Engineering/Architectural Patterns.md",
+                "file": "Computing/Software Engineering/Exercising.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Software Engineering/Architectural Patterns.md"
+                "file": "Computing/Software Engineering/Exercising.md"
               }
             }
           }
@@ -166,32 +148,32 @@
   },
   "active": "bb4c8240709bcec5",
   "lastOpenFiles": [
-    "Computing/Software Engineering/Architectural Paradigms.md",
-    "Computing/Software Engineering/Exercising.md",
-    "Mathematics/Algebra/Matrices.md",
-    "Computing/Software Engineering/Architecture Decision Record (ADR).md",
-    "Computing/Cloud/API Gateway.md",
-    "Computing/Software Engineering/Anti-Patterns.md",
-    "Computing/Software Engineering/Architecture Overview Diagram (AOD).md",
-    "Computing/Software Engineering/Architectural Patterns.md",
     "Computing/Cloud/Cloud Computing.md",
-    "Computing/DevOps/DevOps.md",
-    "Computing/Software Engineering/Design Patterns.md",
+    "Computing/Cloud/exercising.md",
+    "Computing/Software Engineering/Exercising.md",
+    "Computing/Software Engineering/The Operational Aspect of Software Architecture.md",
+    "Computing/Software Engineering/Software Architecture.md",
+    "Computing/Software Engineering/Low Coupling, High Cohesion.md",
+    "Computing/Software Engineering/Deployment Diagram.md",
     "Computing/Software Engineering/Context Diagrams.md",
+    "Computing/Software Engineering/Component Modeling.md",
+    "Computing/Software Engineering/Artifacts.md",
+    "Computing/Software Engineering/Architecture Overview Diagram (AOD).md",
+    "Computing/Software Engineering/Architecture Decision Record (ADR).md",
+    "Computing/Software Engineering/Architectural Patterns.md",
+    "Computing/Software Engineering/Architectural Paradigms.md",
+    "Computing/Software Engineering/Anti-Patterns.md",
+    "Computing/DevOps/DevOps.md",
+    "Mathematics/Algebra/Matrices.md",
+    "Computing/Cloud/API Gateway.md",
+    "Computing/Software Engineering/Design Patterns.md",
     "Computing/Software Engineering/images/andistore_aod.png",
     "Computing/Software Engineering/images/andistore_aod.png.crdownload",
-    "Computing/Cloud/exercising.md",
     "Computing/Software Engineering/images/context_diagram.png",
-    "Computing/Software Engineering/Artifacts.md",
-    "Computing/Software Engineering/Deployment Diagram.md",
     "Computing/Software Engineering/images/deploymentdiagram2.png",
     "Computing/Software Engineering/images/deploymentdiagram2.png.png.crdownload",
     "Computing/Software Engineering/images/deploymentdiagram1.png",
     "Computing/Software Engineering/images/deploymentdiagram1.png.crdownload",
-    "Computing/Software Engineering/Component Modeling.md",
-    "Computing/Software Engineering/Software Architecture.md",
-    "Computing/Software Engineering/Low Coupling, High Cohesion.md",
-    "Computing/Software Engineering/The Operational Aspect of Software Architecture.md",
     "Computing/Software Engineering/images/componentDiagramUML2.jpg",
     "Computing/Software Engineering/images/componentDiagramUML2.jpg.crdownload",
     "Computing/DevOps",

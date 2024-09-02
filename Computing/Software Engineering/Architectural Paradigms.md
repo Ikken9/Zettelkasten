@@ -106,3 +106,7 @@ In modern software development, businesses need to deliver applications quickly 
 
 As the application grows in complexity, it becomes increasingly difficult to maintain and scale. In contrast, microservices offer a way to build applications that can scale and evolve independently, enabling organizations to be more agile and responsive to changing market conditions.
 https://bitloops.com/docs/bitloops-language/learning/software-architecture/microservices-architecture
+
+
+#### SOA vs Microservices
+A diferencia de los microservicios, SOA trata de que haya una mayor interoperabilidad entre los componentes y reusabilidad.

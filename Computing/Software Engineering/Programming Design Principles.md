@@ -1,7 +1,8 @@
+# Programming Design Principles
 
 ## SOLID
 
-In [software programming](https://en.wikipedia.org/wiki/Software_programming "Software programming"), **SOLID** is a [mnemonic](https://en.wikipedia.org/wiki/Mnemonic "Mnemonic") [acronym](https://en.wikipedia.org/wiki/Acronym "Acronym") for five design principles intended to make [object-oriented](https://en.wikipedia.org/wiki/Object-oriented "Object-oriented") designs more understandable, flexible, and [maintainable](https://en.wikipedia.org/wiki/Software_maintenance "Software maintenance"). Although the SOLID principles apply to any object-oriented design, they can also form a core philosophy for methodologies such as [agile development](https://en.wikipedia.org/wiki/Agile_software_development "Agile software development") or [adaptive software development](https://en.wikipedia.org/wiki/Adaptive_software_development "Adaptive software development").
+In software programming, **SOLID** is a mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable. Although the SOLID principles apply to any object-oriented design, they can also form a core philosophy for methodologies such as agile development or adaptive software development.
 
 ### 1. Single Responsibility Principle (SRP)
 

@@ -1,3 +1,5 @@
+# Anti-Patterns
+
 ### 1. The Blob
 
 "The Blob" es un anti-patrón que surge cuando una clase asume demasiadas responsabilidades y centraliza gran parte de la lógica del sistema. Esto puede suceder por varias razones:

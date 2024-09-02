@@ -6,7 +6,29 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:Computing  ",
+      "color": {
+        "a": 1,
+        "rgb": 9642951
+      }
+    },
+    {
+      "query": "path:Electronics  ",
+      "color": {
+        "a": 1,
+        "rgb": 2406143
+      }
+    },
+    {
+      "query": "path:Mathematics  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1,
+  "scale": 0.41134231415477335,
   "close": false
 }

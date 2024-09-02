@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "d93e2359c80cda32",
+        "id": "48b7acf187976905",
         "type": "tabs",
         "children": [
           {
-            "id": "35739db2caf3c4c0",
+            "id": "5acc6898b4ce5ada",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md",
+                "file": "Computing/Software Engineering/Artifacts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3365767757970f51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Computing/Software Engineering/Architectural Paradigms.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5,
-    "collapsed": true
+    "width": 419.5110321044922
   },
   "right": {
     "id": "92f01648e054e397",
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md",
+                "file": "Computing/Software Engineering/Artifacts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md",
+                "file": "Computing/Software Engineering/Artifacts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computing/Algorithms and Data Structures/Dynamic Programming.md"
+                "file": "Computing/Software Engineering/Artifacts.md"
               }
             }
           }
@@ -147,50 +158,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "35739db2caf3c4c0",
+  "active": "5acc6898b4ce5ada",
   "lastOpenFiles": [
-    "Computing/Algorithms and Data Structures/Dynamic Programming.md",
+    "Computing/Software Engineering/Exercising.md",
+    "Computing/Software Engineering/Artifacts.md",
+    "Computing/Software Engineering/Architectural Paradigms.md",
+    "Computing/Software Engineering/Architectural Patterns.md",
+    "Computing/Software Engineering/Component Modeling.md",
+    "Computing/Software Engineering/Software Architecture.md",
+    "Computing/Software Engineering/Low Coupling, High Cohesion.md",
+    "Computing/Software Engineering/The Operational Aspect of Software Architecture.md",
+    "Computing/Software Engineering/Design Patterns.md",
+    "Computing/Software Engineering/Anti-Patterns.md",
+    "Computing/Software Engineering/Context Diagrams.md",
+    "Computing/Software Engineering/images/componentDiagramUML2.jpg",
+    "Computing/Software Engineering/images/componentDiagramUML2.jpg.crdownload",
+    "Computing/Software Engineering/Architecture Overview Diagram (AOD).md",
+    "Computing/Software Engineering/Architecture Decision Record (ADR).md",
+    "Computing/Cloud/Cloud Computing.md",
+    "Computing/DevOps/DevOps.md",
+    "Computing/DevOps",
+    "Computing/Software Engineering/images/aod2.png",
+    "Computing/Software Engineering/images/aod2.png.crdownload",
+    "Computing/Software Engineering/images/aod1.png",
+    "Computing/Software Engineering/images/aod1.png.crdownload",
+    "Computing/Networking/Internet of Things (IoT).md",
+    "Computing/Software Engineering/Functional Requirements (FRs).md",
+    "Computing/Software Engineering/Non-Functional Requirements (NFRs).md",
     "Computing/Algorithms and Data Structures/Optimization.md",
+    "Computing/Software Engineering/Programming Design Principles.md",
+    "Electronics/Low-Pass Filter.md",
+    "Electronics/Components/Battery Charger.md",
     "Computing/Algorithms and Data Structures/Dijkstra's Algorithm.md",
+    "Computing/Algorithms and Data Structures/Dynamic Programming.md",
     "Mathematics/Algebra/Matrices.md",
     "Electronics/Concepts/dBc - Decibels Relative to the Carrier.md",
-    "Electronics/Concepts/Coupling.md",
-    "Electronics/Concepts/Capacitance.md",
-    "Electronics/Components/Capacitor.md",
-    "Electronics/Components/Crystal Oscillator.md",
-    "Computing/Cloud/Cloud Computing.md",
     "Computing/Algorithms and Data Structures",
     "Mathematics/Algebra/matrix.py",
     "Mathematics/Algebra",
     "Mathematics",
-    "Ethics/Untitled.md",
     "Ethics",
-    "Computing/Software Engineering/Design Patterns.md",
-    "Computing/Software Engineering/Anti-Patterns.md",
-    "Computing/Software Engineering/Programming Design Principles.md",
     "Computing/Cloud",
-    "Electronics/Concepts/Kirchhoff's circuit laws.md",
-    "Electronics/Concepts/Resistance.md",
-    "Electronics/Components/Random Access Memory.md",
-    "Electronics/Low-Pass Filter.md",
-    "Electronics/DAC vs Digital Potentiometer.md",
-    "Electronics/Oscillators.md",
-    "Electronics/Capacitive Voltage Divider.md",
     "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg",
-    "Electronics/images/sinusoidal-wave-vs-clipped-sine-wave.jpg.crdownload",
-    "Electronics/images",
-    "Electronics/Concepts",
-    "Electronics/Components",
-    "Computing/Software Engineering/Anti-Patterns 1.md",
-    "Computing/Software Engineering/images/Architectural Patterns.md",
     "Computing/Software Engineering/images/visitor_structure.png",
     "Computing/Software Engineering/images/strategy_structure.png",
     "Computing/Software Engineering/images/state_example.png",
     "Computing/Software Engineering/images/state_solution.png",
     "Computing/Software Engineering/images/state_problem2.png",
-    "Computing/Software Engineering/images/finite_state_machine.png",
-    "Computing/Software Engineering/images/observer_example.png",
-    "Computing/Software Engineering/images/observer_structure.png",
-    "Computing/Software Engineering/images/observer_solution2.png"
+    "Computing/Software Engineering/images/finite_state_machine.png"
   ]
 }

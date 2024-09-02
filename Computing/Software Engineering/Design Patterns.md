@@ -1,3 +1,5 @@
+# Design Patterns
+
 Los **patrones de diseño** (design patterns) son soluciones habituales a problemas comunes en el diseño de software. Cada patrón es como un plano que se puede personalizar para resolver un problema de diseño particular de tu código.
 
 ## Clasificación
@@ -6,7 +8,7 @@ Los patrones de diseño varían en su complejidad, nivel de detalle y escala de 
 
 Los patrones más básicos y de más bajo nivel suelen llamarse _idioms_. Normalmente se aplican a un único lenguaje de programación.
 
-Los patrones más universales y de más alto nivel son los _patrones de arquitectura_. Los desarrolladores pueden implementar estos patrones prácticamente en cualquier lenguaje. Al contrario que otros patrones, pueden utilizarse para diseñar la arquitectura de una aplicación completa.
+Los patrones más universales y de más alto nivel son los [[Computing/Software Engineering/images/Architectural Patterns|Architectural Patterns]]. Los desarrolladores pueden implementar estos patrones prácticamente en cualquier lenguaje. Al contrario que otros patrones, pueden utilizarse para diseñar la arquitectura de una aplicación completa.
 Cabe mencionar que aunque un patrón arquitectónico comunica una imagen de un sistema, no es una arquitectura como tal. Un patrón arquitectónico es más un concepto que captura elementos esenciales de una arquitectura de software. Muchas arquitecturas diferentes pueden implementar el mismo patrón y por lo tanto compartir las mismas características.
 
 
@@ -1121,3 +1123,7 @@ El objeto que originalmente tenía que realizar el comportamiento se pasa ahora 
 
 ![visitor_structure](visitor_structure.png)
 
+
+
+
+*See also* [[Low Coupling, High Cohesion]], [[Anti-Patterns]]

@@ -79,3 +79,33 @@ With a traditional datacenter, you try to estimate the future resource needs. If
 
 In a cloud-based model, you don’t have to worry about getting the resource needs just right. If you find that you need more virtual machines, you add more. If the demand drops and you don’t need as many virtual machines, you remove machines as needed. Either way, you’re only paying for the virtual machines that you use, not the “extra capacity” that the cloud provider has on hand.
 
+
+## Some concepts
+
+#### Load Balancers
+- **Explanation:** Devices or software that distribute network or application traffic across multiple servers.
+- **Common Cloud Providers:** AWS Elastic Load Balancing, Azure Load Balancer, Google Cloud Load Balancing.
+
+#### API Gateways
+- **Explanation:** Entry points for clients to interact with backend services, managing API traffic, security, and routing.
+- **Common Cloud Providers:** AWS API Gateway, Azure API Management, Google Cloud API Gateway.
+
+#### Firewalls
+- **Explanation:** Network security devices that monitor and control incoming and outgoing network traffic based on security rules.
+- Common Cloud Providers:** AWS Security Groups, Azure Firewall, Google Cloud Firewall.
+
+#### Virtual Private Cloud (VPC)
+- Explanation:** Isolated network environments within a cloud provider's infrastructure for hosting resources securely.
+- **Common Cloud Providers:** AWS VPC, Azure Virtual Network, Google Cloud VPC.
+
+#### Auto Scaling
+- **Explanation:** Automatically adjusts computing resources based on demand to maintain performance and optimize costs.
+- *Common Cloud Providers:** AWS Auto Scaling, Azure Virtual Machine Scale Sets, Google Cloud Auto Scaling.
+
+#### Identity and Access Management (IAM)
+- Explanation:** Framework for managing and controlling access to cloud resources.
+- **Common Cloud Providers:** AWS IAM, Azure Active Directory, Google Cloud IAM.
+
+#### Content Delivery Network (CDN)
+- **Explanation:** Distributed network of servers that deliver web content and resources to users based on their geographic location.
+- Common Cloud Providers:** AWS CloudFront, Azure CDN, Google Cloud CDN.

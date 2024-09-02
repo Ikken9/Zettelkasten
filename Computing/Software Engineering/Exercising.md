@@ -120,7 +120,7 @@
 ## Deployment Diagrams
 
 46. ¿Qué diagrama UML se utiliza para comprender la arquitectura física de un sistema? Enumere y describa los elementos que utiliza en la notación.
-    **R:** Diagrama de Despliegue
+    **R:** Diagrama de Despliegue. Nodos, Artefactos, Paquetes y Flechas de Comunicación.
 47. Explica la diferencia entre nodos y componentes en un diagrama de despliegue. ¿Cómo se relacionan estos elementos?
     **R:** Los nodos de un diagrama de despliegue son unidades que pueden procesar, almacenar o transportar datos. Son items en donde reside el software que se quiere desplegar. Los componentes de un diagrama de despliegue pueden son piezas de software o partes del sistema que pueden ser desplegadas dentro de un nodo.
 48. Explica cómo se indican los artefactos en un diagrama de despliegue y cómo se relacionan con los nodos.

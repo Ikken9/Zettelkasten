@@ -37,6 +37,30 @@ Clients, servers, and brokers are three major components of the broker pattern. 
 One of the key benefits of this architecture pattern is how it manages operations, such as change, addition, deletion, or relocation, related to objects in a dynamic manner. Lastly, this architecture pattern separates all communication-related code into layers from the application, allowing applications to run on distributed or single computers. Because of such advantages, broker architecture has been prevalent.
 
 
+
+## Backends For Frontends
+Create separate backend services to be consumed by specific frontend applications or interfaces. This pattern is useful when you want to avoid customizing a single backend for multiple interfaces. This pattern was first described by Sam Newman.
+#### Context
+An application may initially be targeted at a desktop web UI. Typically, a backend service is developed in parallel that provides the features needed for that UI. As the application's user base grows, a mobile application is developed that must interact with the same backend. The backend service becomes a general-purpose backend, serving the requirements of both the desktop and mobile interfaces.
+
+But the capabilities of a mobile device differ significantly from a desktop browser, in terms of screen size, performance, and display limitations. As a result, the requirements for a mobile application backend differ from the desktop web UI.
+
+These differences result in competing requirements for the backend.
+
+#### Solution
+Create one backend per user interface. Fine-tune the behavior and performance of each backend to best match the needs of the frontend environment, without worrying about affecting other frontend experiences.
+
+
+
+## BFF vs API Gateway
+BFF Layer is basically an orchestrator layer which is also called as **Backend for frontend**. When an orchestrator layer includes aggregation, computation, composition of some data then it’s more than a simple API gateway.
+
+BFF is mostly used to support its client request with one-size-fit all API
+
+While an [[API Gateway]] is a single point of entry into the system for all clients, a **BFF is only responsible for a single type of client**. Let’s assume your system has two (typical) clients: A Single Page Application (SPA) and a mobile client (Android, iOS). In this case, each client would get its own API Gateway, which would therefore be a _BFF_. In other words, an **API gateway is a single point of entry for all clients fetching data from the system, while a** **backend-for-frontend (BFF) is tailored to a specific frontend** — typically with multiple BFFs corresponding to multiple frontends.
+
+
+
 ## What is the difference between tiers and layers?
 #### Layer
 **The term layer refers to a logical separation of code.** In other words, it’s a coherent set of related functionality.

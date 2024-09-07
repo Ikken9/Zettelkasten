@@ -42,3 +42,37 @@ Para evitar que la IA se convierta en una herramienta de opresión, debemos:
     
 
 En resumen, la IA tiene un potencial increíble, pero también plantea desafíos significativos. Es nuestra responsabilidad asegurarnos de que se utilice para promover la justicia y la igualdad, y no para perpetuar la discriminación y la injusticia.
+
+
+**
+
+Persona 3: Dilemas Éticos y el Futuro de la IA en la Justicia
+
+El caso de COMPAS nos plantea un montón de dilemas éticos. ¿Hasta qué punto podemos confiar en la inteligencia artificial para tomar decisiones que afectan la vida de las personas? ¿Cómo podemos asegurarnos de que estos sistemas sean justos y equitativos? ¿Quién es responsable si un algoritmo comete un error?
+
+Este es solo un ejemplo de cómo la tecnología puede tener consecuencias inesperadas y problemáticas. Es fundamental que como futuros ingenieros seamos conscientes de estos problemas y nos involucremos en el debate ético sobre el desarrollo y la aplicación de la IA. Necesitamos pensar en cómo podemos construir un futuro donde la tecnología se use para promover la justicia y la igualdad, en lugar de perpetuar la discriminación.
+
+¿Qué piensan ustedes? ¿Cómo podemos evitar que la inteligencia artificial se convierta en una herramienta de opresión en lugar de una herramienta de progreso?
+
+Puntos Clave Persona 3:
+
+- Plantear preguntas éticas sobre la confianza en la IA en la toma de decisiones judiciales.
+    
+- Abrir la discusión sobre la responsabilidad en caso de errores algorítmicos.
+    
+- Destacar la importancia de la ética en el desarrollo y aplicación de la IA.
+    
+- Involucrar a la audiencia en la reflexión sobre el futuro de la IA y la justicia.
+    
+
+---
+
+Conclusión:
+
+Esperamos que este caso les haya dado que pensar. El sistema COMPAS es solo un ejemplo de los desafíos éticos que plantea la inteligencia artificial en la sociedad. Es crucial que como ingenieros nos comprometamos a desarrollar tecnologías que sean justas, equitativas y que beneficien a todos, sin importar su raza, género o condición social.
+
+Gracias por su atención y esperamos sus preguntas y comentarios.
+
+**
+
+

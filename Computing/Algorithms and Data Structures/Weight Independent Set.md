@@ -22,3 +22,5 @@ The **Maximum Weight Independent Set (WIS)** seeks to find an independent set in
 
 **Applications**: It can be used in various scenarios like scheduling (where tasks cannot overlap), resource allocation, wireless networks (where interference must be minimized), and more.
 
+
+## WIS en Cadenas

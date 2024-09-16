@@ -4,3 +4,5 @@ Dynamic programming is both a mathematical optimization method and an algorithmi
 
 This is done by defining a sequence of **value functions** $V_1, V_2, V_3, \ldots, V_n$ taking _y_ as an argument representing the **state** of the system at times $i$ from $1$ to $n$.
 
+## Problema
+[[Weight Independent Set]]: 

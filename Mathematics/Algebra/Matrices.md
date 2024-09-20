@@ -14,7 +14,9 @@ $$
 
 Hallar A+B, siendo:
 
- $$ A= \begin{bmatrix}\ 1 & 5 & 0\\ 1 & 2 &-1\\ 0 & -1 & 3\\\end{bmatrix}   \   y \  \  B=\begin{bmatrix}\ 3 & 1 & 5\\ 0 & 3 & 7\\ 1 & 2 & 1 \\\end{bmatrix}  $$
+ $$
+ A= \begin{bmatrix}\ 1 & 5 & 0\\ 1 & 2 &-1\\ 0 & -1 & 3\\\end{bmatrix}   \   y \  \  B=\begin{bmatrix}\ 3 & 1 & 5\\ 0 & 3 & 7\\ 1 & 2 & 1 \\\end{bmatrix}
+ $$
 
  $$ A= \begin{bmatrix}\ 1 & 5 & 0\\ 1 & 2 &-1\\ 0 & -1 & 3\\\end{bmatrix} $$
 
@@ -25,7 +27,7 @@ To multiply a matrix **by another matrix** we need to do the **dot product** o
 
 The "Dot Product" is where we **multiply matching members**, then sum up:
 
-(1, 2, 3) • (7, 9, 11) = 1×7 + 2×9 + 3×11  = 58
+$(1, 2, 3) \cdot (7, 9, 11) = 1\cdot7 + 2\cdot9 + 3\cdot11 = 58$
 
 We match the 1st members (1 and 7), multiply them, likewise for the 2nd members (2 and 9) and the 3rd members (3 and 11), and finally sum them up.
 
@@ -49,6 +51,14 @@ $$ ((-3) \cdot 0 + 0 \cdot 1 + (-5) \cdot 4) $$
 $$ ((-3) \cdot (-1) + 0 \cdot 0 + (-5) \cdot (-2)) $$
 $$ ((-3) \cdot 5 + 0 \cdot 6 + (-5) \cdot 7) $$
 
-Transposed Matrix
+
+## Transposing a Matrix
+
+The **transpose** of a matrix is an operator which flips a matrix over its diagonal; that is, it switches the row and column indices of the matrix $A$ by producing another matrix, often denoted by $A^T$ (among other notations).
 
 
+
+
+
+
+1.C, 5, 6, 7, 11, 10, 16, 18. 

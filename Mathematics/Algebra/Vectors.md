@@ -2,6 +2,8 @@
 
 **Un vector (matriz) es una colección ordenada de datos** (tanto primitivos u objetos dependiendo del lenguaje). Los vectores (matrices) se emplean para almacenar múltiples valores en una sola variable, frente a las variables que sólo pueden almacenar un valor (por cada variable).
 
+For this note, I'm considering the vector as a special case of a matrix, where the vector is a matrix with one and only one row (or column), but at the end still a matrix.
+
 ## Addition
 
 Vectors of the same dimension can be added element by element. This operation between vectors is known as **addition** and is denoted by the operator $+$
@@ -36,7 +38,7 @@ Sean $\vec{x},\vec{y}$ dos vectores y $\alpha, \beta$ dos escalares cualquiera. 
 * **Distribución sobre suma de vectores**: $\alpha (\vec{x}+\vec{y}) = \alpha\vec{x} + \alpha\vec{y}$
 
 
-##  Multiplying a Vector by another Vector
+## Multiplying a Vector by another Vector
 
 The dot product of two $n$-vectors $\vec{a},\vec{b}$ is defined as the scalar:
 $$
@@ -48,11 +50,12 @@ $$
 \vec{a}\cdot\vec{b} = (1,2,3)\cdot (4,5,6) = 1\cdot 4+2\cdot 5 + 3\cdot 6 = 4+10+18=32
 $$
 
+
 ## Norm of a Vector
 
 A **norm** is a way to measure the size of a vector, a matrix, or a tensor. In other words, norms are a class of functions that enable us to quantify the magnitude of a vector.
 
-if $\vec{x} = \begin{bmatrix}x_{1}\\ x_{2}\\ \vdots \\ x_{n}\end{bmatrix}\in R^{n}$, then its **norm** is by definition:
+If $\vec{x} = \begin{bmatrix}x_{1}\\ x_{2}\\ \vdots \\ x_{n}\end{bmatrix}\in R^{n}$, then its **norm** is by definition:
 
 $$
 ||x|| = \displaystyle\sqrt{x_{1}^2 + x_{2}^2 + \cdots + x_{n}^{2}}

@@ -73,20 +73,20 @@ For each item $i$, we have three choices:
 2. Include $i$ in knapsack 1 (if it fits).
 3. Include $i$ in knapsack 2 (if it fits).
 
-The recurrence relation is:
+The recurrence relation is: 
 $$
  \begin{align}
     dp(i,c_1,c_2) = \begin{dcases*}
-        max(dp(k-1,c_1,c_2),\;dp(k-1,c_1-w_k,c_2)+k_v),& if $ c_1 \ge w_k $,\\
-        max(dp(k-1,c_1,c_2),\;dp(k-1,c_1,c_2-w_k)+k_v), & if $ c_2 \ge w_k $
+        max(dp(i-1,c_1,c_2),\;dp(i-1,c_1-w_i,c_2)+i_v),& if $ c_1 \ge w_i $,\\
+        max(dp(i-1,c_1,c_2),\;dp(i-1,c_1,c_2-w_i)+i_v), & if $ c_2 \ge w_i $
         \end{dcases*}
   \end{align}
 $$
 
 Where: 
-- $dp(k-1,c_1,c_2)$ represents the option of not taking item $k$.
-- $dp(k-1,c_1-w_k,c_2)+k_v)$ represents the option of placing $k$ in knapsack 1, as long as the remaining capacity $c_1$ is sufficient.
-- $dp(k-1,c_1,c_2-w_k)+k_v)$ represents the option of placing $k$ in knapsack 2, as long as the remaining capacity $c_2$ is sufficient.
+- $dp(i-1,c_1,c_2)$ represents the option of not taking item $i$.
+- $dp(i-1,c_1-w_i,c_2)+i_v)$ represents the option of placing $i$ in knapsack 1, as long as the remaining capacity $c_1$ is sufficient.
+- $dp(i-1,c_1,c_2-w_i)+i_v)$ represents the option of placing $i$ in knapsack 2, as long as the remaining capacity $c_2$ is sufficient.
 
 
 $dp(0,c_1,c_2) = 0$, since if there are no items, the total value is 0.

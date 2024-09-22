@@ -1,4 +1,7 @@
 # Capacitor
+
+
+
 ## Applications
 
 In terms of pure functionality, no other discrete component can offer as much circuit performance as a capacitor. Although both capacitors and inductors provide field storage for electric and magnetic fields, respectively, the former fields are much easier to contend with. While inductors have their place, capacitors dominate as the charge storage device across the board, able to deliver instantaneous power during dips in the overall net performance.

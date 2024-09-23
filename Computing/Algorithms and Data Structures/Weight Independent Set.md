@@ -48,7 +48,7 @@ As we need to consider both options, the solution is the one that has the maximu
 For any string graph with positive weights, the next algorithm produces an maximum weight independent set:
 
 1) We use the Bellman Equation to calculate the vector: $$A[i]=WIS(G_i)$$
-2) We iterate over the vector $A$ backwards selecting the vertices of the  *MWIS*
+2) We iterate over the vector $A$ backwards selecting the vertices of the *MWIS*
 
 It has a time complexity of $O(n)$
 

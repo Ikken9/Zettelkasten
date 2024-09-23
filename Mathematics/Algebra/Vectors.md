@@ -39,7 +39,7 @@ Sean $\vec{x},\vec{y}$ dos vectores y $\alpha, \beta$ dos escalares cualquiera. 
 
 
 ## Multiplying a Vector by another Vector
-
+The two vectors must have the **same number of elements**. This is because the dot product involves multiplying corresponding components of the two vectors and then summing the results.
 The dot product of two $n$-vectors $\vec{a},\vec{b}$ is defined as the scalar:
 $$
 <\vec{a},\vec{b}> = \vec{a} \cdot \vec{b} = a_{1}b_{1}+a_{2}b_{2}+\cdots+a_{n}b_{n} = \displaystyle\sum_{i=1}^{n} a_{i}b_{i}
@@ -55,9 +55,22 @@ $$
 
 A **norm** is a way to measure the size of a vector, a matrix, or a tensor. In other words, norms are a class of functions that enable us to quantify the magnitude of a vector.
 
+The norm is written as follows:
+
+$$Norm~\vec{x}=||x||$$
+
 If $\vec{x} = \begin{bmatrix}x_{1}\\ x_{2}\\ \vdots \\ x_{n}\end{bmatrix}\in R^{n}$, then its **norm** is by definition:
 
 $$
 ||x|| = \displaystyle\sqrt{x_{1}^2 + x_{2}^2 + \cdots + x_{n}^{2}}
 $$
 
+#### Properties of the Norm
+
+**Non-negativity**
+
+$$||x||\ge0$$
+
+**Triangular Inequality**
+
+$$$$

@@ -53,4 +53,42 @@ For any string graph with positive weights, the next algorithm produces an maxim
 It has a time complexity of $O(n)$
 
 
+**Example**:
+
+```tikz
+\usepackage{tikz} 
+\begin{document} 
+\begin{tikzpicture}[scale=1, every node/.style={circle, draw, minimum size=0.8cm, inner sep=0pt}]
+\node (v3) at (0,0) {3}; 
+\node (v2) at (2,0) {2}; 
+\node (v1) at (4,0) {1}; 
+\node (v6) at (6,0) {6}; 
+\node (v4) at (8,0) {4}; 
+\node (v5) at (10,0) {5}; 
+
+\draw (v3) -- (v2); 
+\draw (v2) -- (v1); 
+\draw (v1) -- (v6); 
+\draw (v6) -- (v4); 
+\draw (v4) -- (v5); 
+\end{tikzpicture} 
+\end{document}
+```
+
+
+$WIS(G_1)=3$
+
+$WIS(G_2)=3$, as the maximum weighted independent set we can create considering $G_1$ and $G_2$ is still $3$
+
+$WIS(G_3)=max\{w(s) + WIS(G_{n-2}), WIS(G_{n-1})\} = max\{w(v_3)+3, 3\}=4$
+
+$WIS(G_4) = max\{6 + WIS(G_2), WIS(G_3)\} = max\{6 + 3, 4\} = 9$
+
+$WIS(G_5) = max\{4 + WIS(G_3), WIS(G_4)\} = max\{4 + 4, 9\} = 9$
+
+$WIS(G_6)=max\{5 + WIS(G_4), WIS(G_5)\} = max\{5 + 9, 9\}=14$
+
+
+**But how can we know which vertices to add to the solution?**
+Well, starting from the end, we need to look at the $max$ function on each step, and check which value is greater. If the greater value is "$w(s) + WIS(G_{n-2})$", then we add the vertex to the solution, otherwise not.
 

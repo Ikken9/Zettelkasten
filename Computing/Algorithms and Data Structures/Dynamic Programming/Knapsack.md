@@ -23,8 +23,11 @@ Assuming that all states of the first  $i-1$ items have been processed, what 
 - When it is put into the knapsack, the remaining capacity decreases by   $w_i$  and the total value increases by  $v_i$, so the maximum value in this case is   $dp_{i-1,j-w_i}+v_i$
 
 From this we can derive the *dp* transition equation:
-$$dp_{i,j}=max(dp_{i-1,j}, \;dp_{i-1, j-w_i}+v_i)$$
+$$dp_{i,j}=max\{dp_{i-1,j}, \;dp_{i-1, j-w_i}+v_i\}$$
 
+Or what is the same:
+
+$$K(n, W) = max\{K(n-1, W), v_n + K(n-1, W-w_n)\}$$
 
 
 ### Code Implementation using Dynamic Programming (Rust)
@@ -91,3 +94,5 @@ Where:
 
 $dp(0,c_1,c_2) = 0$, since if there are no items, the total value is 0.
 
+
+chequear el practico 2

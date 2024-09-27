@@ -160,8 +160,5 @@ $(A \cdot B \cdot C)^{-1} = C^{-1} \cdot B^{-1} \cdot A^{-1}$
 $(A')^{-1} = (A^{-1})'$
 
 
-#### **Finding the Inverse**
-
-
 
 

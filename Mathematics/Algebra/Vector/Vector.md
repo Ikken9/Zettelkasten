@@ -1,11 +1,8 @@
-# Vectors (Informatics)
+# Vector
 
-**Un vector (matriz) es una colección ordenada de datos** (tanto primitivos u objetos dependiendo del lenguaje). Los vectores (matrices) se emplean para almacenar múltiples valores en una sola variable, frente a las variables que sólo pueden almacenar un valor (por cada variable).
+For this note, I'm considering the vector as a special case of a [[Matrix|matrix]], where the vector is a matrix with one and only one row (or column), but at the end still a matrix.
 
-For this note, I'm considering the vector as a special case of a matrix, where the vector is a matrix with one and only one row (or column), but at the end still a matrix.
-
-## Addition
-
+## **Addition**
 Vectors of the same dimension can be added element by element. This operation between vectors is known as **addition** and is denoted by the operator $+$
 
 Given $a,b,c$ $n$-vectors on $\mathbb{R}^{n}$ where $c=a+b$, the operation is:
@@ -21,8 +18,7 @@ $$
 $$
 
 
-## Multiplying a Vector by an Scalar
-
+## **Multiplying a Vector by an Scalar**
 Given a vector $\vec{v}$ on $\mathbb{R}^{n}$ and a scalar $\alpha \in \mathbb{R}$.
 
 $$
@@ -30,6 +26,7 @@ $$
 $$
 
 ### Some properties:
+
 Sean $\vec{x},\vec{y}$ dos vectores y $\alpha, \beta$ dos escalares cualquiera. Las propiedades que cumple el producto escalar-vector son las siguientes:
 
 * **Conmutatividad**: $\alpha \vec{x} = \vec{x}\alpha$
@@ -38,7 +35,8 @@ Sean $\vec{x},\vec{y}$ dos vectores y $\alpha, \beta$ dos escalares cualquiera. 
 * **Distribución sobre suma de vectores**: $\alpha (\vec{x}+\vec{y}) = \alpha\vec{x} + \alpha\vec{y}$
 
 
-## Multiplying a Vector by another Vector
+
+## **Multiplying a Vector by another Vector**
 The two vectors must have the **same number of elements**. This is because the dot product involves multiplying corresponding components of the two vectors and then summing the results.
 The dot product of two $n$-vectors $\vec{a},\vec{b}$ is defined as the scalar:
 $$
@@ -51,26 +49,27 @@ $$
 $$
 
 
-## Norm of a Vector
-
-A **norm** is a way to measure the size of a vector, a matrix, or a tensor. In other words, norms are a class of functions that enable us to quantify the magnitude of a vector.
-
-The norm is written as follows:
-
-$$Norm~\vec{x}=||x||$$
-
-If $\vec{x} = \begin{bmatrix}x_{1}\\ x_{2}\\ \vdots \\ x_{n}\end{bmatrix}\in R^{n}$, then its **norm** is by definition:
+## **Transposing a Vector**
+Given a vector $\vec{a}$:
 
 $$
-||x|| = \displaystyle\sqrt{x_{1}^2 + x_{2}^2 + \cdots + x_{n}^{2}}
+\vec{a} = \begin{bmatrix}a_{1}\\ a_{2}\\ \vdots \\ a_{n}\end{bmatrix}
 $$
 
-#### Properties of the Norm
+The transpose operation returns the same vector flipped over it's diagonal:
 
-**Non-negativity**
+$$
+\vec{a}^{T} = \begin{bmatrix}a_{1}\\ a_{2}\\ \vdots \\ a_{n}\end{bmatrix}^{T} = [a_{1}\; a_{2}\; \cdots \; a_{n}]
+$$
 
-$$||x||\ge0$$
+It's also posible to transpose a transposed vector, as it will return the original one:
 
-**Triangular Inequality**
+$$
+\left(\vec{a}^{T}\right)^{T} = \left(\begin{bmatrix}a_{1}\\ a_{2}\\ \vdots \\ a_{n}\end{bmatrix}^{T}\right)^{T} = [a_{1}\; a_{2}\; \cdots \; a_{n}]^{T} = \begin{bmatrix}a_{1}\\ a_{2}\\ \vdots \\ a_{n}\end{bmatrix} = \vec{a}
+$$
 
-$$$$
+## **Distance between Vectors**
+
+$$
+d(\mathbf{a},\mathbf{b}) = ||\mathbf{a} - \mathbf{b}|| = \displaystyle\sqrt{(a_{0}-b_{0})^2 + (a_{1}-b_{1})^2 + \cdots + (a_{n-1}-b_{n-1})^2}
+$$

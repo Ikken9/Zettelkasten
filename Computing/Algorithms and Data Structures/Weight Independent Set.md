@@ -1,6 +1,5 @@
 # Weight Independent Set
 
-
 ## Independent Set
 An **independent set**, **stable set**, **coclique** or **anticlique** is a set of vertices in a graph, no two of which are adjacent. That is, it is a set $S$ of vertices such that for every two vertices in $S$, there is no edge connecting the two.
 

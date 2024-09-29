@@ -1,6 +1,6 @@
 # Angle between Vectors
 
-Let $a$ and $b$ be two non-zero vectors in $ℝ^n$. We define the angle formed by $a$ and $b$ as the number $\theta ∈ [0, \pi]$ that satisfies:
+Let $a$ and $b$ be two non-zero [[Vector|vectors]] in $ℝ^n$. We define the angle formed by $a$ and $b$ as the number $\theta ∈ [0, \pi]$ that satisfies:
 
 $$
 \cos{(\theta)} = \displaystyle\frac{a^T b}{||a|| \cdot ||b||}

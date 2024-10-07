@@ -31,7 +31,7 @@ The sine wave output is manipulated so it will not reach its max high or low. By
 Different cuts provide varying levels of frequency stability over temperature changes. More stable cuts like the AT-cut will maintain a more consistent waveform under varying environmental conditions, whereas less stable cuts might result in more waveform distortion.
 
 #### Quality Factor (Q-Factor)
-The Q-factor, which represents the damping of the crystal, is influenced by the cut. A high Q-factor crystal will produce a purer waveform with less clipping, while a lower Q-factor might lead to more signal distortion.
+The [[Q Factor]], which represents the damping of the crystal, is influenced by the cut. A high Q-factor crystal will produce a purer waveform with less clipping, while a lower Q-factor might lead to more signal distortion.
 
 #### Jitter
 Is a method of describing the stability of an oscillator in the Time Domain. It combines all the noise sources together and shows their effect with respect to time.

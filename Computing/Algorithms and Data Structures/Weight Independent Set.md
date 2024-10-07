@@ -28,7 +28,7 @@ Note: $W$ is a subset, not a graph, $S$ is the graph containing the vertices of 
 
 If $G$ is a non-directed finite graph with $v_1, ...,  v_n$ as vertices, endowed with a function of positive weights on the vertices called $w$ then, the following is defined:
 
-$$WIS(G) = max \{w(S) : S \subseteq V (G)\; and \;S \;is \;independent \;on \;G\}$$
+$$WIS(G) = \max \{w(S) : S \subseteq V (G)\; and \;S \;is \;independent \;on \;G\}$$
 where:
 
 $w(S) = \sum_{s\in S}(s)$
@@ -40,7 +40,7 @@ Let's suppose that $S^*$ is the optimal solution, that is: $w(S*)=WIS(G_n)$, the
 
 - If it's **NOT INCLUDED** then, all vertices of $S^*$ belong to  $G_{n-1}$, so the solution will be: $$w(S^*)=WIS(G_{n-1})$$
 - If it's **INCLUDED** then, the vertex $v_{n-1}$ is not included since $S^*$ is an [[Weight Independent Set#Independent Set|independent set]], so the solution will be: $$w(S^*)=w(n)+WIS(G_{n-2})$$
-As we need to consider both options, the solution is the one that has the maximum weighted independent set (as the problem states), that is: $$max\{WIS(G_{n-1}), \;w(n)+WIS(G_{n-2})\}$$
+As we need to consider both options, the solution is the one that has the maximum weighted independent set (as the problem states), that is: $$\max\{WIS(G_{n-1}), \;w(n)+WIS(G_{n-2})\}$$
 
 ### WIS on string graphs
 
@@ -79,13 +79,13 @@ $WIS(G_1)=3$
 
 $WIS(G_2)=3$, as the maximum weighted independent set we can create considering $G_1$ and $G_2$ is still $3$
 
-$WIS(G_3)=max\{w(s) + WIS(G_{n-2}), WIS(G_{n-1})\} = max\{w(v_3)+3, 3\}=4$
+$WIS(G_3)=\max\{w(s) + WIS(G_{n-2}), WIS(G_{n-1})\} = \max\{w(v_3)+3, 3\}=4$
 
-$WIS(G_4) = max\{6 + WIS(G_2), WIS(G_3)\} = max\{6 + 3, 4\} = 9$
+$WIS(G_4) = \max\{6 + WIS(G_2), WIS(G_3)\} = \max\{6 + 3, 4\} = 9$
 
-$WIS(G_5) = max\{4 + WIS(G_3), WIS(G_4)\} = max\{4 + 4, 9\} = 9$
+$WIS(G_5) = \max\{4 + WIS(G_3), WIS(G_4)\} = \max\{4 + 4, 9\} = 9$
 
-$WIS(G_6)=max\{5 + WIS(G_4), WIS(G_5)\} = max\{5 + 9, 9\}=14$
+$WIS(G_6)=\max\{5 + WIS(G_4), WIS(G_5)\} = \max\{5 + 9, 9\}=14$
 
 
 **But how can we know which vertices to add to the solution?**

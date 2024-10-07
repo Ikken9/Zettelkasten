@@ -23,11 +23,11 @@ Assuming that all states of the first  $i-1$ items have been processed, what 
 - When it is put into the knapsack, the remaining capacity decreases by   $w_i$  and the total value increases by  $v_i$, so the maximum value in this case is   $dp_{i-1,j-w_i}+v_i$
 
 From this we can derive the *dp* transition equation:
-$$dp_{i,j}=max\{dp_{i-1,j}, \;dp_{i-1, j-w_i}+v_i\}$$
+$$dp_{i,j}=\max\{dp_{i-1,j}, \;dp_{i-1, j-w_i}+v_i\}$$
 
 Or what is the same:
 
-$$K(n, W) = max\{K(n-1, W), v_n + K(n-1, W-w_n)\}$$
+$$K(n, W) = \max\{K(n-1, W), v_n + K(n-1, W-w_n)\}$$
 
 
 ### Code Implementation using Dynamic Programming (Rust)
@@ -80,8 +80,8 @@ The recurrence relation is:
 $$
  \begin{align}
     dp(i,c_1,c_2) = \begin{dcases*}
-        max(dp(i-1,c_1,c_2),\;dp(i-1,c_1-w_i,c_2)+i_v),& if $ c_1 \ge w_i $,\\
-        max(dp(i-1,c_1,c_2),\;dp(i-1,c_1,c_2-w_i)+i_v), & if $ c_2 \ge w_i $
+        \max(dp(i-1,c_1,c_2),\;dp(i-1,c_1-w_i,c_2)+i_v),& if $ c_1 \ge w_i $,\\
+        \max(dp(i-1,c_1,c_2),\;dp(i-1,c_1,c_2-w_i)+i_v), & if $ c_2 \ge w_i $
         \end{dcases*}
   \end{align}
 $$

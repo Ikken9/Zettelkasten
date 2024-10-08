@@ -90,6 +90,33 @@ $$
 $$
 
 
+Backtracking in the context of sequence alignment using dynamic programming is the process of reconstructing the optimal alignment of two sequences after filling in the dynamic programming (DP) table. Here’s a detailed explanation of how the backtracking works:
+
+
+### Backtracking Process
+
+**Initialization**:
+Start from the bottom-right corner of the $DP$ table, which contains the minimum penalty for aligning the full lengths of both sequences.
+
+2. **Moving through the DP Table**:
+   - At each cell `(i, j)` in the table, determine how you arrived at that cell by checking the three possible origins:
+     - **Diagonal move**: If `dp[i][j]` came from `dp[i-1][j-1]`, it means there was a match or mismatch. 
+     - **Vertical move**: If `dp[i][j]` came from `dp[i-1][j]`, it indicates that a gap was inserted in `seq2`, meaning the character from `seq1` is aligned with a gap.
+     - **Horizontal move**: If `dp[i][j]` came from `dp[i][j-1]`, it indicates that a gap was inserted in `seq1`, meaning the character from `seq2` is aligned with a gap.
+
+3. **Choosing the Path**:
+   - If the characters from both sequences are the same, you typically choose the diagonal move.
+   - If they are different, you still may choose the diagonal if it represents a mismatch (adding the mismatch penalty).
+   - If you find that the penalty for a gap (either vertical or horizontal) is less than a mismatch, you would choose to move vertically or horizontally.
+
+4. **Constructing the Alignment**:
+   - As you move through the table, append characters from both sequences (or gaps) to the aligned sequences.
+   - This process continues until you reach the top-left corner of the table.
+
+5. **Handling Remaining Characters**:
+   - If you finish backtracking and one sequence still has characters left, you append gaps for the other sequence for each remaining character.
+
+
 
 
 

@@ -22,7 +22,7 @@ A simple approach that balances latency and bandwidth is using their ratio. This
 $$
 \text{cost} = \frac{\text{latency}}{\text{bandwidth}}
 $$
-- **Pros**: Easy to implement and provides a simple balance.
+q- **Pros**: Easy to implement and provides a simple balance.
 - **Cons**: Bandwidth might dominate the formula if latency is low.
 
 

@@ -35,12 +35,15 @@ $w(S) = \sum_{s\in S}(s)$
 
 That means, $WIS$ is a function that maximizes the weights of the vertices of an independent set $W$ that contains the vertices of $G$.
 
-
 Let's suppose that $S^*$ is the optimal solution, that is: $w(S*)=WIS(G_n)$, then we ask ourselves if the last vertex $V_n$ is included or not in $S^*$:
 
 - If it's **NOT INCLUDED** then, all vertices of $S^*$ belong to  $G_{n-1}$, so the solution will be: $$w(S^*)=WIS(G_{n-1})$$
 - If it's **INCLUDED** then, the vertex $v_{n-1}$ is not included since $S^*$ is an [[Weight Independent Set#Independent Set|independent set]], so the solution will be: $$w(S^*)=w(n)+WIS(G_{n-2})$$
-As we need to consider both options, the solution is the one that has the maximum weighted independent set (as the problem states), that is: $$\max\{WIS(G_{n-1}), \;w(n)+WIS(G_{n-2})\}$$
+As we need to consider both options, the solution is the one that has the maximum weighted independent set (as the problem states), that is: 
+
+$$\max\{WIS(G_{n-1}), \;w(n)+WIS(G_{n-2})\}$$
+
+So we found a [[Dynamic Programming|dynamic programming]] algorithm where the solution for each small set of subproblems can be computed using the previous subproblems' solutions.
 
 ### WIS on string graphs
 

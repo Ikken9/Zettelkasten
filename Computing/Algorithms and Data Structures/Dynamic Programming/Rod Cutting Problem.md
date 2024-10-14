@@ -1,4 +1,5 @@
 # Rod Cutting Problem
+Is a well-known problem that can be solved using [[Dynamic Programming|dynamic programming]].
 
 Given a rod of length n and an array of prices that includes prices of all pieces. We have predefined (positive integers) lengths $l_1 \lt \cdots \lt l_k$ and fixed prices (positive reals) $p_1, \cdots, p_k$ for each length.
 

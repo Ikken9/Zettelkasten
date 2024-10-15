@@ -7,13 +7,13 @@ In an **OBST**, each node is assigned a weight that represents the probability o
 The search time can be improved, placing the most frequently used data in the root and closer to the root element, while placing the least frequently used data near leaves and in leaves.
 
 There can be more than one optimal tree. The number of binary trees on $n$ nodes turns out to be $$\frac{\binom{2n}{n}}{n+1}$$
-## **Finding the optimal tree**
+## **Finding the optimal tree (successful search only)**
 
 ***How can we find an optimal tree, given the access frequency of each key?***
 
 A brute-force approach that checks each of the possible binary search trees is impractical, because there are far too many trees to check.
 
-Let the keys be {$K_1 \lt K_2 \lt \cdots \lt K_n$} in their dictionary order (sorted), and let $p(i)$ be the probability of accessing $k_i$. Thus: $$\sum_{i=1}^n p(i) = 1$$
+Let the keys be {$K_1 \lt K_2 \lt \cdots \lt K_n$} in their dictionary order (sorted by their probability), and let $p(i)$ be the probability of accessing $k_i$. Thus: $$\sum_{i=1}^n p(i) = 1$$
 Now let $1 \le j \le k \le n$, and let $T$ be any tree constructed from the keys $K_j, \cdots, K_k$.
 
 We define $Depth_T(K_i)$, where $j \le i \le k$, to be the depth in $T$ of the node where $K_i$ is stored, and define the cost of $T$ to be $C(T) = \sum_{i=j}^k p(i)(Depth_T(K_i) + 1)$
@@ -59,7 +59,7 @@ That is, if $T$ is an optimal tree for $K_j, \cdots, K_k$ and its root is $K_r$,
 ```
 
 
-If the left and right subtrees of $T$ are $T_L$ and $T_R$, then the depth of each node of $T_L$ or $T_R$ increases by one when it is viewed as a node of $T$.
+If the left and right subtrees of $T$ are $T_L$ and $T_R$ (both optimal trees), then the depth of each node of $T_L$ or $T_R$ increases by one when it is viewed as a node of $T$.
 
 So it follows that if $K_l$ is at the root of $T$ then:
 
@@ -79,5 +79,19 @@ Therefore replacing $T_L$ or $T_R$ by any tree on the same nodes with lower cost
 
 ## **Construction**
 
-To construct the Optimal BST we need to find the Bellman equation that captures the optimal substructure of the problem and forms the basis for the dynamic programming solution.
+#### Note: 
+In many cases, the **dummy keys** (and their corresponding frequencies) are not considered when constructing an **Optimal Binary Search Tree (OBST)** because the focus is solely on **successful searches**, meaning the probability of searching for an element in the tree is given only for the actual keys.
 
+In some applications, **unsuccessful searches** may not be important or relevant. The application could guarantee that every search will always find a matching key (perhaps through pre-processing or ensuring that only valid keys are searched).
+
+To construct the **Optimal BST** we need to find the Bellman equation that captures the optimal substructure of the problem and forms the basis for the dynamic programming solution.
+
+The **Bellman equation** for the optimal binary search tree is a recursive formulation that defines the optimal solution in terms of smaller subproblems. Let $\Lambda(i, j)$ denote the **minimum** expected search cost for the subtree containing the keys $k_i,k_{i+1}, \cdots, k_j​$. The Bellman equation is:
+
+$$\Lambda(i, j) = \min_{r=i}^{j} \{ \Lambda(i, r-1) + \Lambda(r+1, j) + W(i, j) \}$$
+Where:
+
+- $W(i,j) = \sum_{k=i}^{j}p_k$​ is the total probability of searching any key between $k_i$​ and $k_j$.
+- $\Lambda(i, r-1)$ is the optimal search cost for the left subtree.
+- $\Lambda(r+1, j)$ is the optimal search cost for the right subtree.
+- $r$ is the root of the current subtree.

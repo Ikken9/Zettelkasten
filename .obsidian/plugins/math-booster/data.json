@@ -151,8 +151,5 @@
     "searchModalRange": "recent",
     "searchModalDvQuery": ""
   },
-  "excludedFiles": [
-    "Computing/Algorithms and Data Structures/Memoization.md",
-    "Electronics/Oscillators.md"
-  ]
+  "excludedFiles": []
 }

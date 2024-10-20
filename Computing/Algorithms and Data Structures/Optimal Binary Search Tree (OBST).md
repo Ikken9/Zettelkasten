@@ -18,9 +18,9 @@ Now let $1 \le j \le k \le n$, and let $T$ be any tree constructed from the keys
 
 We define $Depth_T(K_i)$, where $j \le i \le k$, to be the depth in $T$ of the node where $K_i$ is stored, and define the cost of $T$ to be $C(T) = \sum_{i=j}^k p(i)(Depth_T(K_i) + 1)$
 
-If $j = 1$ and $k = n$ then the cost is the expected number of comparisons to find a key in the tree; if $T$ holds only a subset of the keys then $C(T)$ represents the cost of searching within the tree for only those keys, with searches for other keys regarded as free. We extend our previous terminology by saying that any tree $T$ is optimal if its cost is as small as the cost of any other tree with the same keys.
+If $j = 1$ and $k = n$ then the cost is the expected number of comparisons to find a key in the tree, **that equals to the level of the key in $T$**; if $T$ holds only a subset of the keys then $C(T)$ represents the cost of searching within the tree for only those keys, with searches for other keys regarded as free. We extend our previous terminology by saying that any tree $T$ is optimal if its cost is as small as the cost of any other tree with the same keys.
 
-Our objective is to find a tree $T$ on all n keys that minimizes $C(T)$. The crucial observation in reducing the number of trees to be considered is that ***every subtree of an optimal tree is itself optimal***.
+Our objective is to find a tree $T$ on all $n$ keys that minimizes $C(T)$. The crucial observation in reducing the number of trees to be considered is that ***every subtree of an optimal tree is itself optimal***. We want a balanced tree where the $K$ keys whose frequency is higher are located in an orderly manner, where the key with the highest frequency is the root.
 
 That is, if $T$ is an optimal tree for $K_j, \cdots, K_k$ and its root is $K_r$, then its left subtree must be an optimal tree for $K_j, . . . , K_{r-1}$, and its right subtree must be an optimal tree for $K_{r+1}, \cdots, K_k$.
 
@@ -76,7 +76,6 @@ $$
 Therefore replacing $T_L$ or $T_R$ by any tree on the same nodes with lower cost would result in a tree of lower cost than $T$.
 
 
-
 ## **Construction**
 
 #### Note: 
@@ -95,3 +94,111 @@ Where:
 - $\Lambda(i, r-1)$ is the optimal search cost for the left subtree.
 - $\Lambda(r+1, j)$ is the optimal search cost for the right subtree.
 - $r$ is the root of the current subtree.
+
+### *The process is the following:*
+
+Create an $n \times n$ matrix where $n$ is the number of keys where $\text{cost}[i][j]$ represents the optimal cost of a BST containing keys from index $i$ to $j$
+
+**Base Cases**:
+- For single keys (when $i = j$), the cost is simply the frequency of that key
+- These form the diagonal of our matrix (if we start the matrix from $n$, if instead we start from 0, then the diagonal is will be filled with 0s)
+
+We fill the matrix diagonally, considering chains of increasing length.
+
+**Final Result**: The optimal cost is stored in $\text{cost}[0][n-1]$ and it represents the optimal cost of the OBST.
+
+
+
+> [!exercise]
+> Given the $n$ keys $(K_1  = 10), (K_2 = 20), (K_3 = 30), (K_4 = 40)$ and their corresponding frequencies $4, 2, 6, 3$, find the OBST.
+> 
+> We construct an empty ($\text{0 to n+1}) \times (\text{0 to n+1})$ matrix starting from $0$. (This step can be omitted and start directly from $n$):
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2  & 3 & 4 \\ 
+> \hline 0 &  &  &  &  \\ 
+> \hline 1 &  &  &  &  \\ 
+> \hline 2 &  &  &  & \\
+> \hline 3 &  &  &  & \\
+> \hline 4 &  &  &  & \\
+> \hline \end{array}
+> $$
+>First, we will calculate the values where $j-i$ is equal to $0$.
+>When $i=0$, $j=0$, then $j-i = 0$
+>When $i = 1$, $j=1$, then $j-i = 0$
+>When $i = 2$, $j=2$, then $j-i = 0$
+>When $i = 3$, $j=3$, then $j-i = 0$
+>When $i = 4$, $j=4$, then $j-i = 0$
+>
+>Therefore, $c[0, 0] = 0$, $c[1 , 1] = 0$, $c[2,2] = 0$, $c[3,3] = 0$, $c[4,4] = 0$, where $c$ is the **cost**.
+>
+>Now we populate the matrix with that values in $[0, 0]$, $[1, 1]$, $[2, 2]$, $[3, 3]$, $[4, 4]$:
+>This step is just filling the matrix diagonal with zeroes.
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2 & 3 & 4\\ 
+> \hline 0 & 0 &   &   &   &  \\ 
+> \hline 1 &   & 0 &   &   &  \\ 
+> \hline 2 &   &   & 0 &   &  \\
+> \hline 3 &   &   &   & 0 &  \\
+> \hline 4 &   &   &   &   & 0\\
+> \hline \end{array}
+> $$
+> 
+>Now we need to consider all the trees that can be made with one node, so we to find the values where $j-i$ equal to $1$:
+>When $j=1$, $i=0$, then $j-i = 1$
+>When $j=2$, $i=1$, then $j-i = 1$
+>When $j=3$, $i=2$, then $j-i = 1$
+>When $j=4$, $i=3$, then $j-i = 1$
+>
+>So to calculate the cost, we will consider only the $j^\text{th}$ value of $c[i,j]$.
+> 
+>The cost of $c[0,1]$ is $4$ (The key $j_1$ is $10$, and the corresponding cost is $4$).
+>The cost of $c[1,2]$ is $2$ (The key $j_2$ is $20$, and the corresponding cost is $2$).
+>The cost of $c[2,3]$ is $6$ (The key $j_3$ is $30$, and the corresponding cost is $6$).
+>The cost of $c[3,4]$ is $3$ (The key $j_4$ is $40$, and the corresponding cost is $3$).
+> 
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2 & 3 & 4\\ 
+> \hline 0 & 0 & 4 &   &   &  \\ 
+> \hline 1 &   & 0 & 2 &   &  \\ 
+> \hline 2 &   &   & 0 & 6 &  \\
+> \hline 3 &   &   &   & 0 & 3\\
+> \hline 4 &   &   &   &   & 0\\
+> \hline \end{array}
+> $$
+> 
+>Now we need to consider all the trees that can be made with two nodes (a chain of two), so we need to find the values where $j-i$ equal to $2$:
+>When $j=2$, $i=0$, then $j-i = 2$
+>When $j=3$, $i=1$, then $j-i = 2$
+>When $j=4$, $i=2$, then $j-i = 2$
+>
+>So first we calculate the sum of the frequencies of the nodes that we're considering, first $K_1$ and $K_2$, so it would be:
+>
+>$\sum_{K_1}^{K_2}p_K = 4 + 2 = 6$
+>
+>and now we need to find all the possible options to create a BST using two nodes and calculate the cost for each:
+>
+>First option: $K_1$ as root: $\sum_{K_1}^{K_2}p_K = 6 + p_{K_1} = 4 = 10$
+>Second option: $K_2$ as root: $\sum_{K_1}^{K_2}p_K = 6 + p_{K_2} = 2 = 8$
+>
+>We take the minimum and add it to the matrix.
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2 & 3 & 4\\ 
+> \hline 0 & 0 & 4 & 8 &   &  \\ 
+> \hline 1 &   & 0 & 2 &   &  \\ 
+> \hline 2 &   &   & 0 & 6 &  \\
+> \hline 3 &   &   &   & 0 & 3\\
+> \hline 4 &   &   &   &   & 0\\
+> \hline \end{array}
+> $$
+> 
+>Now we consider $K_2$ and $K_3$ 
+ 
+
+
+
+#### Time and Space Complexity
+Time complexity is $O(n^3)$ because there are $n^2$ states and each minimum has $n$ terms.

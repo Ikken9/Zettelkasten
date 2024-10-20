@@ -83,7 +83,7 @@ In many cases, the **dummy keys** (and their corresponding frequencies) are not 
 
 In some applications, **unsuccessful searches** may not be important or relevant. The application could guarantee that every search will always find a matching key (perhaps through pre-processing or ensuring that only valid keys are searched).
 
-To construct the **Optimal BST** we need to find the Bellman equation that captures the optimal substructure of the problem and forms the basis for the dynamic programming solution.
+To construct the **Optimal BST** we need to find the Bellman equation that captures the optimal substructure of the problem and forms the basis for the [[Dynamic Programming|dynamic programming ]] solution.
 
 The **Bellman equation** for the optimal binary search tree is a recursive formulation that defines the optimal solution in terms of smaller subproblems. Let $\Lambda(i, j)$ denote the **minimum** expected search cost for the subtree containing the keys $k_i,k_{i+1}, \cdots, k_j​$. The Bellman equation is:
 

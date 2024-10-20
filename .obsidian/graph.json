@@ -1,31 +1,38 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Computing  ",
+      "query": "path:Physics  ",
       "color": {
         "a": 1,
-        "rgb": 9642951
+        "rgb": 14362921
       }
     },
     {
       "query": "path:Electronics  ",
       "color": {
         "a": 1,
-        "rgb": 2406143
+        "rgb": 1159140
+      }
+    },
+    {
+      "query": "path:Computing  ",
+      "color": {
+        "a": 1,
+        "rgb": 8003307
       }
     },
     {
       "query": "path:Mathematics  ",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 12644117
       }
     }
   ],
@@ -39,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.641359738489074,
-  "close": false
+  "scale": 0.6633963768298703,
+  "close": true
 }

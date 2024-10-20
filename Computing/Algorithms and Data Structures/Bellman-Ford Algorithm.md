@@ -15,12 +15,12 @@ It states that for the graph having $n$ vertices, all the edges should be rela
 
 Given a finite graph $G$ endowed with a function $l$ that assigns random weights to each edge, $l: E(G) \rightarrow \mathbb{R}$, where $E(G)$ is the set of edges of $G$ and let $s \in V(G)$, where $s$ is the start vertex on the set of vertex $V(G)$:
 
-$$\varphi(k, v) = \min\{l(p)\}$$
+$$\varphi(k, v) = \min\{l(P)\}$$
 
 Where: 
 - $v \in V(G)$
 - $k \in \mathbb{N}$
-- $p$ is a path from $s$ to $v$ using up to $k$ edges of $G$ ($p$ uses $\le k$ edges)
+- $P$ is a path from $s$ to $v$ using up to $k$ edges of $G$ ($p$ uses $\le k$ edges)
 
 The condition $\le$ naturally arises because the maximum number of edges in any path between two vertices in a graph is limited by the structure of the graph itself. Specifically: $$k \leq |V(G)| - 1$$That is the upper bound in a connected graph ***without cycles***, where $|V(G)|$ is the number of vertices. Any simple path (without revisiting nodes) between two vertices can use at most $|V(G)| - 1$ edges. It serves as a flexible way to represent how far we are allowed to explore paths in the graph in terms of edge count.
 
@@ -44,17 +44,23 @@ The algorithm consists of several phases. Each phase scans through all edges of 
 It is claimed that $n-1$ phases of the algorithm are sufficient to correctly calculate the lengths of all shortest paths in the graph (again, we believe that the cycles of negative weight do not exist). For unreachable vertices the distance $d[ ]$ will remain equal to infinity  $\infty$ .
 
 > [!lemma|*]
-> 1) If $\varphi(k, v) = \varphi(k+1, v) \; \forall v \in V(G)$  then, $\varphi(k, v) = \min\{l(p)\}$
+> 1) If $\varphi(k, v) = \varphi(k+1, v) \; \forall v \in V(G)$  then, $\varphi(k, v) = \min\{l(P)\}$
 >    That is, if the values of $\varphi(k, v)$ do not change when we increase the number of edges from $k$ to $k+1$, for every vertex $v \in V(G)$, then we have already found the minimum weight of any path from $s$ to $v$ using at most $k$ edges.
-> 2) If $G$ does not have negative cycles ($l(p) < 0$) then, $\varphi(k-1, v) = \varphi(k, v) \; \forall v \in V(G)$
+> 2) If $G$ does not have negative cycles ($l(P) < 0$) then, $\varphi(k-1, v) = \varphi(k, v) \; \forall v \in V(G)$
 >    That is, if the graph $G$ does not contain negative weight cycles, then the shortest paths from $s$ to any vertex $v$ will stabilize after $n−1$ iterations, i.e., after considering paths with up to $n−1$ edges.
 
 ### **Bellman Equation**
- $$
+
+So we need to calculate $\varphi(n-1,v)$ and $\varphi(n,v)$ $\forall v \in V$ and there are two possibilities, the first is when the shortest paths have been found, and there are no negative weight cycles, and the second is that a negative weight cycle exists in the graph:
+
+1) $\forall v \; [\varphi(n-1, v) = \varphi(n,v)] \Rightarrow \varphi(n-1,v) = d_e(s,v)$
+2) $\exists v \;[\varphi(n-1,v)\ne \varphi(n,v)]\Rightarrow G \;\text{has a negative cycle}$
+
+$$
  \begin{align}
-    \varphi(k + 1,v) = \begin{dcases*}
-        \varphi(k,v)\\
-        \min_{t \in Adj(v)}\{\varphi(k,t) + l(t,v)\}
+    \varphi(n + 1,v) = \begin{dcases*}
+        \varphi(n,v)\\
+        \min_{t \in Adj(v)}\{\varphi(n,t) + l(t,v)\}
         \end{dcases*}
   \end{align}
   $$

@@ -5,9 +5,10 @@
   "obsidian-image-toolkit",
   "table-editor-obsidian",
   "obsidian-tikzjax",
-  "OA-file-hider",
   "mathlinks",
   "dataview",
   "quick-preview",
-  "math-booster"
+  "math-booster",
+  "OA-file-hider",
+  "better-export-pdf"
 ]

@@ -13,3 +13,8 @@ The Agile development process typically follows these steps:
 7. **Repeat**: Start the next sprint, adjusting priorities based on feedback and evolving requirements. 
 
 This cycle continues until the product is complete.
+
+## Iron Triangle
+
+![[Pasted image 20241020234155.png]]
+

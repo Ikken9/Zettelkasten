@@ -24,5 +24,5 @@ Is the combination of cultural philosophies, practices, and tools that increases
 - **Common Tools:** Docker, Kubernetes.
 
 #### Service Mesh
-- **Explanation:** Infrastructure layer for managing microservices communication, providing load balancing, service discovery, encryption, and monitoring.
+- **Explanation:** Infrastructure layer for managing microservices communication, providing load balancing, service discovery, encryption, and [[Monitoring|monitoring]].
 - **Common Tools:** Istio, Linkerd.

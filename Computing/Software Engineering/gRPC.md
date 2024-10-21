@@ -6,7 +6,7 @@ In gRPC, a client application can directly call a method on a server application
 
 
 ### What is RPC?
-In RPC, client-server communications operate as if the client API requests were a local operation, or the request was internal server code.
+In RPC, client-server communications operate as if the client [[API|API]] requests were a local operation, or the request was internal server code.
 
 In RPC, a client sends a request to a process on the server that is always listening for remote calls. In the request, it contains the server function to call, along with any parameters to pass. An RPC API uses a protocol like HTTP, TCP, or UDP as its underlying data exchange mechanism.
 

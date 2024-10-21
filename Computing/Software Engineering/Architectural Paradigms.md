@@ -21,7 +21,7 @@ In a monolithic architecture, the entire application is developed as a single, u
 - **Deployment Risk:** A failure in any component can potentially cause the entire application to fail, posing higher risk during updates or maintenance.
 
 
-### Types of monolithic architectures
+### **Types of monolithic architectures**
 
 #### Layered architecture
 Is a common pattern used in software design, where the application is divided into different layers based on their functionality. Often divided in four layers.
@@ -73,11 +73,11 @@ Distributed systems architecture involves constructing an application from multi
 
 **Cons:**
 - **Complexity:** Increased complexity due to managing multiple services, network communication, and potential issues with synchronization and data consistency.
-- **Deployment:** More complex deployment processes, requiring infrastructure for service orchestration, discovery, and monitoring.
+- **Deployment:** More complex deployment processes, requiring infrastructure for service orchestration, discovery, and [[Monitoring|monitoring]].
 - **Testing:** More challenging to test due to the need for integration testing across different services and handling network latency or failures.
 - **Performance Overhead:** Potential performance overhead from inter-service communication over a network, which can introduce latency and additional complexity.
 
-### Types of distributed architectures
+### **Types of distributed architectures**
 
 #### Service-Oriented Architecture (SOA)
 SOA is an architectural pattern where the application is composed of services that communicate over a network using standard protocols. Unlike microservices, SOA often involves more extensive use of enterprise service buses (ESBs) and has a focus on reusability and integration.
@@ -98,7 +98,7 @@ The space-based architecture style is specifically designed to address problems 
 https://umairsaeed.com/space-based-architecture/
 
 #### Microservices architecture
-Microservices are a software development approach that has gained significant popularity in recent years. It is a modern architectural style where software applications are built as a collection of small, independent services that communicate with each other through APIs.
+Microservices are a software development approach that has gained significant popularity in recent years. It is a modern architectural style where software applications are built as a collection of small, independent services that communicate with each other through [[API|APIs]].
 
 Unlike traditional monolithic applications, where everything is tightly integrated, microservices are loosely coupled and can be deployed, managed, and scaled independently. This approach has several benefits, including better agility, scalability, and maintainability.
 

@@ -349,7 +349,7 @@ Internamente el método de la clase **Adapter** invocará al método de la clase
 
 El objeto de la abstracción controla la apariencia de la aplicación, delegando el trabajo real al objeto de la implementación vinculado. Las distintas implementaciones son intercambiables siempre y cuando sigan una interfaz común, permitiendo a la misma GUI funcionar con Windows y Linux.
 
-En consecuencia, puedes cambiar las clases de la GUI sin tocar las clases relacionadas con la API. Además, añadir soporte para otro sistema operativo sólo requiere crear una subclase en la jerarquía de implementación.
+En consecuencia, puedes cambiar las clases de la GUI sin tocar las clases relacionadas con la [[API|API]]. Además, añadir soporte para otro sistema operativo sólo requiere crear una subclase en la jerarquía de implementación.
 
 #### Estructura
 

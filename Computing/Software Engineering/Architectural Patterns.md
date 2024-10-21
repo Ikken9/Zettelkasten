@@ -8,7 +8,7 @@ Three-tier architecture is a well-established software application architecture 
 The presentation tier is the user interface and communication layer of the application, where the end user interacts with the application. Its main purpose is to display information to and collect information from the user. This top-level tier can run on a web browser, as desktop application, or a graphical user interface (GUI), for example. Web presentation tiers are developed by using HTML, CSS, and JavaScript. Desktop applications can be written in various languages depending on the platform.
 
 #### Application tier
-The application tier, also known as the logic tier or middle tier, is the heart of the application. In this tier, information that is collected in the presentation tier is processed - sometimes against other information in the data tier - using business logic, a specific set of business rules. The application tier can also add, delete, or modify data in the data tier using API calls. 
+The application tier, also known as the logic tier or middle tier, is the heart of the application. In this tier, information that is collected in the presentation tier is processed - sometimes against other information in the data tier - using business logic, a specific set of business rules. The application tier can also add, delete, or modify data in the data tier using [[API|API]] calls. 
 
 #### Data tier
 The data tier, sometimes called database tier, data access tier or back-end, is where the information that is processed by the application is stored and managed.
@@ -58,7 +58,7 @@ Create one backend per user interface. Fine-tune the behavior and performance of
 
 
 ## BFF vs API Gateway
-BFF Layer is basically an orchestrator layer which is also called as **Backend for frontend**. When an orchestrator layer includes aggregation, computation, composition of some data then it’s more than a simple API gateway.
+BFF Layer is basically an orchestrator layer which is also called as **Backend for frontend**. When an orchestrator layer includes aggregation, computation, composition of some data then it’s more than a simple [[API Gateway|API gateway]].
 
 BFF is mostly used to support its client request with one-size-fit all API
 

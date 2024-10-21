@@ -1,6 +1,6 @@
 # REST
 
-**Representational State Transfer (REST)** is a software architecture that imposes conditions on how an API should work. Is a set of architectural constraints, not a protocol or a standard. API developers can implement REST in a variety of ways.
+**Representational State Transfer (REST)** is a software architecture that imposes conditions on how an [[API|API]] should work. Is a set of architectural constraints, not a protocol or a standard. API developers can implement REST in a variety of ways.
 
 You can use REST-based architecture to support high-performing and reliable communication at scale. You can easily implement and modify it, bringing visibility and cross-platform portability to any API system.
 API developers can design APIs using several different architectures. APIs that follow the REST architectural style are called REST APIs. Web services that implement REST architecture are called RESTful web services. The term RESTful API generally refers to RESTful web APIs. However, you can use the terms REST API and RESTful API interchangeably.
@@ -42,3 +42,8 @@ RESTful web services support total client-server separation. They simplify and d
 
 #### Independence
 REST APIs are independent of the technology used. You can write both client and server applications in various programming languages without affecting the API design. You can also change the underlying technology on either side without affecting the communication.
+
+
+## **REST Methods**
+
+[REST guidelines](https://restfulapi.net/rest-architectural-constraints/) suggest using a specific HTTP method on a particular type of call made to the server (though technically it is possible to violate this guideline, yet it is highly discouraged).

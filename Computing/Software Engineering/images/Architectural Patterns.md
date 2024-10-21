@@ -43,7 +43,7 @@
 
 **Descripción**:
 
-- Similar a SOA, pero con un enfoque más granular. Cada microservicio es una unidad de despliegue independiente que implementa una funcionalidad específica. Los microservicios se comunican entre sí a través de APIs.
+- Similar a SOA, pero con un enfoque más granular. Cada microservicio es una unidad de despliegue independiente que implementa una funcionalidad específica. Los microservicios se comunican entre sí a través de [[API|APIs]].
 
 **Ventajas**:
 

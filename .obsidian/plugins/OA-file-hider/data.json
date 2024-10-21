@@ -1,9 +1,9 @@
 {
   "hidden": true,
   "hiddenList": [
-    "Computing/Algorithms and Data Structures/assets",
     "Electronics/images",
     "Physics/Radio Frequency/assets",
-    "Computing/Software Engineering/images"
+    "Computing/Software Engineering/images",
+    "Computing/Algorithms and Data Structures/assets"
   ]
 }

@@ -14,7 +14,7 @@ Using a message queue can ensure that business-critical messages between applica
 Some message queue solutions can handle message encryption, transactionality and other communication aspects between applications and services. This simplifies application development and enables disparate architectures to work together.  
 
 #### Versatility:
-Message queue solutions can support multiple languages, such as Java, Node.js, COBOL, C/C++, Go, .NET, Python, Ruby, and C#. They can also support numerous application programming interfaces (APIs) and protocols, including MQTT, AMQP, [[REST]] and many others.  
+Message queue solutions can support multiple languages, such as Java, Node.js, COBOL, C/C++, Go, .NET, Python, Ruby, and C#. They can also support numerous application programming interfaces ([[API|APIs]]) and protocols, including MQTT, AMQP, [[REST]] and many others.  
 
 #### Resilience:
 Asynchronous messaging ensures application-specific faults won’t impact the system. If one component in the system stalls, all others can continue interacting with the queue and processing messages. This decreases the chance that the entire system’s stability will be impacted by one part’s failure.  

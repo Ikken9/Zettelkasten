@@ -9,7 +9,7 @@ If we want to find the set of reactions where minimum energy is required, then w
 
 
 ## **The idea behind the algorithm**
-The Bellman-Ford algorithm’s primary principle is that it starts with a single source and calculates the distance to each node. The distance is initially unknown and assumed to be infinite, but as time goes on, the algorithm relaxes those paths by identifying a few shorter paths. Hence it is said that Bellman-Ford is based on [[Edge Relaxation|Principle of Relaxation]].
+The Bellman-Ford algorithm’s primary principle is that it starts with a single source and calculates the distance to each node. The distance is initially unknown and assumed to be infinite, but as time goes on, the algorithm relaxes those paths by identifying a few shorter paths. Hence it is said that Bellman-Ford is based on [[Edge Relaxation|Edge Relaxation]].
 
 It states that for the graph having $n$ vertices, all the edges should be relaxed $n-1$ times to compute the single source shortest path.
 

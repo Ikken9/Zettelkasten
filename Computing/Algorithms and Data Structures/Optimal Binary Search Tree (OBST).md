@@ -9,7 +9,7 @@ The search time can be improved, placing the most frequently used data in the ro
 There can be more than one optimal tree. The number of binary trees on $n$ nodes turns out to be $$\frac{\binom{2n}{n}}{n+1}$$
 ## **Finding the optimal tree (successful search only)**
 
-***How can we find an optimal tree, given the access frequency of each key?***
+***How can we find an optimal tree, given the access frequency (or probability depending on the problem) of each key?***
 
 A brute-force approach that checks each of the possible binary search trees is impractical, because there are far too many trees to check.
 
@@ -83,7 +83,7 @@ In many cases, the **dummy keys** (and their corresponding frequencies) are not 
 
 In some applications, **unsuccessful searches** may not be important or relevant. The application could guarantee that every search will always find a matching key (perhaps through pre-processing or ensuring that only valid keys are searched).
 
-To construct the **Optimal BST** we need to find the Bellman equation that captures the optimal substructure of the problem and forms the basis for the [[Dynamic Programming|dynamic programming ]] solution.
+To construct the **Optimal BST** we need to find the Bellman equation that captures the optimal substructure of the problem and forms the basis for the [[Dynamic Programming|dynamic programming]] solution.
 
 The **Bellman equation** for the optimal binary search tree is a recursive formulation that defines the optimal solution in terms of smaller subproblems. Let $\Lambda(i, j)$ denote the **minimum** expected search cost for the subtree containing the keys $k_i,k_{i+1}, \cdots, k_j​$. The Bellman equation is:
 
@@ -132,6 +132,8 @@ We fill the matrix diagonally, considering chains of increasing length.
 >
 >Therefore, $c[0, 0] = 0$, $c[1 , 1] = 0$, $c[2,2] = 0$, $c[3,3] = 0$, $c[4,4] = 0$, where $c$ is the **cost**.
 >
+>**Note**: $i$ is the row, $j$ is the column.
+>
 >Now we populate the matrix with that values in $[0, 0]$, $[1, 1]$, $[2, 2]$, $[3, 3]$, $[4, 4]$:
 >This step is just filling the matrix diagonal with zeroes.
 > $$
@@ -174,16 +176,20 @@ We fill the matrix diagonally, considering chains of increasing length.
 >When $j=3$, $i=1$, then $j-i = 2$
 >When $j=4$, $i=2$, then $j-i = 2$
 >
->So first we calculate the sum of the frequencies of the nodes that we're considering, first $K_1$ and $K_2$, so it would be:
+>**IMPORTANT: Always consider contiguous sequences of nodes, for example: $[K_1, K_3, K_4]$ is not a valid sequence because the key $K_2$ is next to $K_1$ and is skipped**. 
+>So first we calculate the sum of the frequencies of the nodes that we're considering:
 >
->$\sum_{K_1}^{K_2}p_K = 4 + 2 = 6$
+>First $K_1$ and $K_2$, so it would be:
+>
+>$\sum_{i = K_1}^{i = K_2}p_i = 4 + 2 = 6$
 >
 >and now we need to find all the possible options to create a BST using two nodes and calculate the cost for each:
+>you just have to find where those are on the table which is at $c[0, k - 1]$ and $c[k, n]$
 >
->First option: $K_1$ as root: $\sum_{K_1}^{K_2}p_K = 6 + p_{K_1} = 4 = 10$
->Second option: $K_2$ as root: $\sum_{K_1}^{K_2}p_K = 6 + p_{K_2} = 2 = 8$
+>First option: $K_1$ as root: $(\sum_{i = K_1}^{i = K_2}p_i = 6) + (c[0,0] = 0) + (c[1,2] = 2) = 8$
+>Second option: $K_2$ as root: $(\sum_{i = K_1}^{i = K_2}p_i = 6) + (c[0,1]) + (c[2,2]) = 10$
 >
->We take the minimum and add it to the matrix.
+>We take the minimum ($8$) and add it to the matrix.
 > $$
 > \begin{array}{|c|c|c|c|c|} 
 > \hline   & 0 & 1 & 2 & 3 & 4\\ 
@@ -195,7 +201,69 @@ We fill the matrix diagonally, considering chains of increasing length.
 > \hline \end{array}
 > $$
 > 
->Now we consider $K_2$ and $K_3$ 
+>Now we consider $K_2$ and $K_3$:
+>
+>$\sum_{i = K_2}^{i = K_3}p_i = 2 + 6 = 8$
+>
+>and now (again) we need to find all the possible options to create the BST using those two nodes and calculate the cost for each:
+>
+>First option: $K_2$ as root: $(\sum_{i = K_2}^{i = K_3}p_i = 8) + (c[0, 1] = 4) + (c[2, 3] = 6) = 14$
+>Second option: $K_3$ as root: $(\sum_{i = K_2}^{i = K_3}p_i = 8) + (p_{K_2} = 2) = 10$
+>
+>We take the minimum ($10$) and add it to the matrix.
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2 & 3 & 4\\ 
+> \hline 0 & 0 & 4 & 8 &   &  \\ 
+> \hline 1 &   & 0 & 2 & 10 &  \\ 
+> \hline 2 &   &   & 0 & 6 &  \\
+> \hline 3 &   &   &   & 0 & 3\\
+> \hline 4 &   &   &   &   & 0\\
+> \hline \end{array}
+> $$
+>Now we consider $K_3$ and $K_4$
+>
+>$\sum_{i = K_3}^{i = K_4}p_i = 9$
+>
+>First option: $K_3$ as root: $(\sum_{i = K_3}^{i = K_4}p_i = 9) + (p_{K_4} = 6) = 15$
+>Second option: $K_4$ as root: $(\sum_{i = K_3}^{i = K_4}p_i = 9) + (p_{K_3} = 3) = 12$
+>
+>We take the minimum ($12$) and add it to the matrix.
+>
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2 & 3 & 4\\ 
+> \hline 0 & 0 & 4 & 8 &   &  \\ 
+> \hline 1 &   & 0 & 2 & 10 &  \\ 
+> \hline 2 &   &   & 0 & 6 & 12 \\
+> \hline 3 &   &   &   & 0 & 3\\
+> \hline 4 &   &   &   &   & 0\\
+> \hline \end{array}
+> $$
+> 
+>Now we need to consider all the trees that can be made with three nodes (a chain of three), so we need to find the values where $j-i$ equal to $3$:
+>When $j=3$, $i=0$, then $j-i = 3$
+>When $j=4$, $i=1$, then $j-i = 3$
+>
+>So we first consider $K_1$, $K_2$ and $K_3$
+>
+>$\sum_{i = K_1}^{i = K_3}p_i = 4 + 2 + 6 = 12$
+>
+>First option: $K_1$ as root: $(\sum_{i = K_1}^{i = K_3}p_i = 12) + (p_{K_2} = 2) + (p_{K_3} = 6) = 20$
+>Second option: $K_2$ as root: $(\sum_{i = K_1}^{i = K_3}p_i = 12) + (p_{K_1} = 4) + (p_{K_3} = 6) = 22$
+>Third option: $K_3$ as root: $(\sum_{i = K_1}^{i = K_3}p_i = 12) + (p_{K_1} = 4) + (p_{K_2} = 2) = 18$
+>
+>We take the minimum ($18$) and add it to the matrix.
+> $$
+> \begin{array}{|c|c|c|c|c|} 
+> \hline   & 0 & 1 & 2 & 3 & 4\\ 
+> \hline 0 & 0 & 4 & 8 & 18 &  \\ 
+> \hline 1 &   & 0 & 2 & 10 &  \\ 
+> \hline 2 &   &   & 0 & 6 & 12 \\
+> \hline 3 &   &   &   & 0 & 3\\
+> \hline 4 &   &   &   &   & 0\\
+> \hline \end{array}
+> $$
  
 
 

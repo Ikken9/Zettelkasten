@@ -1,7 +1,0 @@
-# Monitoring vs Observability
-
-**Monitoring** and **Observability** are two related concepts in system management, but they differ in their focus and approach. 
-
-[[Monitoring]] refers to the process of collecting and analyzing specific metrics, logs, and alerts to track the performance and health of a system. It's more about keeping track of predefined metrics and ensuring that the system runs as expected by measuring things like CPU usage, memory consumption, or error rates. Monitoring is typically used to detect known issues by setting thresholds, so when a value exceeds a certain limit, an alert is triggered to notify system administrators that something is wrong. It is useful for detecting when things break or when the system is under-performing, but it is often limited in explaining why the issue occurred in the first place.
-
-On the other hand, observability is a broader concept that aims to provide a deeper understanding of a system's internal state by examining its outputs, which include logs, metrics, and traces. While monitoring is about answering known questions (such as whether CPU usage is too high), observability is about being able to ask new, unknown questions and get answers. It helps explain why something happened by allowing engineers to explore system behavior more comprehensively, especially in complex, distributed environments where problems might not have been anticipated. Observability tools enable deeper investigations when things go wrong, helping to diagnose and fix the root cause of unexpected issues.

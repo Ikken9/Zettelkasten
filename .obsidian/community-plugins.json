@@ -3,12 +3,12 @@
   "pseudocode-in-obs",
   "obsidian-dictionary-plugin",
   "obsidian-image-toolkit",
-  "table-editor-obsidian",
   "obsidian-tikzjax",
   "mathlinks",
   "dataview",
   "quick-preview",
   "math-booster",
-  "OA-file-hider",
-  "better-export-pdf"
+  "better-export-pdf",
+  "table-editor-obsidian",
+  "OA-file-hider"
 ]
